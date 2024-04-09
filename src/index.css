@@ -6,4 +6,8 @@
   .container-page {
     @apply mx-auto max-w-[1200px];
   }
+
+  .animation-fade {
+    @apply transition-all duration-150 ease-in-out;
+  }
 }

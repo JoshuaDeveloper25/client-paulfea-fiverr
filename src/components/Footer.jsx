@@ -2,17 +2,22 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto px-3 py-2">
+    <footer className="mt-auto px-3 py-3">
       <div className="container-page flex flex-col sm:flex-row sm:items-start items-center justify-between">
         {/* NewsLetter */}
         <div>
           <div className="sm:mb-0 mb-3">
-            <label className="font-bold" htmlFor="newsletter">
+            <label
+              className="font-bold"
+              htmlFor="newsletter"
+            >
               Newsletter:
             </label>
             <input
               className="focus:border-secondary block border border-tertiary outline-none rounded px-2 py-1"
               type="email"
+              name="newsletter"
+              id="newsletter"
               placeholder="Sign up...."
             />
           </div>

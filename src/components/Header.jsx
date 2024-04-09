@@ -6,13 +6,18 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
   const navigate = useNavigate();
 
+  const signUp = () => {
+    navigate(`/signup`);
+    setIsNavOpen(false);
+  };
+
   return (
     <>
-      <header className="container-page w-full px-3">
+      <header className="container-page w-full px-3 py-3">
         <div className="flex items-center justify-between">
           <div>
             <Link>
-              <img className="w-28" src={logo} alt={`Logo`} />
+              <img className="relative z-[1000] w-28" src={logo} alt={`Logo`} />
             </Link>
           </div>
 
@@ -20,7 +25,7 @@ const Header = () => {
             {/* MOBILE-MENU */}
             <section className="flex lg:hidden">
               <div
-                className="HAMBURGER-ICON space-y-2"
+                className="HAMBURGER-ICON space-y-2 cursor-pointer"
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
               >
                 <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -31,16 +36,16 @@ const Header = () => {
               <div
                 className={
                   isNavOpen
-                    ? "absolute w-full h-[100vh] top-0 left-0 bg-white z-10 flex flex-col justify-evenly items-center"
+                    ? "fixed hamburguer-open w-full h-[100vh] top-0 left-0 bg-white z-10 flex flex-col justify-evenly items-center"
                     : "hidden"
                 }
               >
                 <div
-                  className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+                  className="CROSS-ICON absolute top-0 right-0 px-8 py-3"
                   onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
                 >
                   <svg
-                    className="h-8 w-8 text-gray-600"
+                    className="h-8 w-8 text-gray-600 cursor-pointer"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -54,27 +59,37 @@ const Header = () => {
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center gap-6 justify-between min-h-[250px]">
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a href="/solutions">Solutions</a>
+                    <a onClick={() => setIsNavOpen(false)} href="/solutions">
+                      Solutions
+                    </a>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a href="/resources">Resources</a>
+                    <a onClick={() => setIsNavOpen(false)} href="/resources">
+                      Resources
+                    </a>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a href="/pricing">Pricing</a>
+                    <a onClick={() => setIsNavOpen(false)} href="/pricing">
+                      Pricing
+                    </a>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a href="/company">Company</a>
+                    <a onClick={() => setIsNavOpen(false)} href="/company">
+                      Company
+                    </a>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a href="/login">Log In</a>
+                    <a onClick={() => setIsNavOpen(false)} to="/login">
+                      Log In
+                    </a>
                   </li>
 
                   <button
-                    onClick={() => navigate(`/signup`)}
+                    onClick={signUp}
                     type="button"
                     className="border border-tertiary hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
                   >
