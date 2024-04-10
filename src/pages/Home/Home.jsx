@@ -1,12 +1,28 @@
-import ReadyGetStarted from "../../components/ReadyGetStarted"
+import ReadyGetStarted from "../../components/ReadyGetStarted";
+import Features from "./components/Features";
+import HomeCards from "./components/HomeCards";
+import HomeHeader from "./components/HomeHeader";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 const Home = () => {
   return (
     <>
-    {/* Ready to get started? */}
-    <ReadyGetStarted/>
-    </>
-  )
-}
+      {/* Home Header */}
+      <HomeHeader />
 
-export default Home
+      {/* Home Cards */}
+      <HomeCards />
+
+      {/* Why Choose Us? */}
+      <WhyChooseUs />
+
+      {/* Features/Use Cases */}
+      <Features />
+
+      {/* Ready to get started? */}
+      <ReadyGetStarted />
+    </>
+  );
+};
+
+export default Home;

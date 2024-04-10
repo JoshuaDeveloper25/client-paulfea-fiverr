@@ -1,6 +1,5 @@
 import getInTouch from "../../../images/get-in-touch.jpg";
 
-
 const GetInTouch = () => {
   return (
     <section className="container-page px-3">

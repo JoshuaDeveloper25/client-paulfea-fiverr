@@ -11,3 +11,16 @@
     @apply transition-all duration-150 ease-in-out;
   }
 }
+
+.slick-next:before,
+.slick-prev:before {
+  color: #000000 !important;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
