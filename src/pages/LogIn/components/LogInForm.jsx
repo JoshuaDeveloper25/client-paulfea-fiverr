@@ -58,7 +58,7 @@ const LogInForm = () => {
           </div>
 
           <div className="flex justify-center gap-3">
-            <Link className="hover:text-secondary animation-fade">Contact</Link>
+            <Link to={`/contact`} className="hover:text-secondary animation-fade">Contact</Link>
             -
             <Link className="hover:text-secondary animation-fade">Privacy</Link>
             -<Link className="hover:text-secondary animation-fade">Terms</Link>

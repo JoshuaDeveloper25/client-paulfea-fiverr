@@ -6,13 +6,13 @@ const GetInTouch = () => {
     <section className="container-page px-3">
       <div className="text-center my-6">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
-          Contact <span className="font-bold text-secondary">Us</span>
+          Contact <span className="font-bold text-secondary animate-pulse">Us</span>
         </h2>
       </div>
 
       <article className="flex  md:flex-row flex-col-reverse gap-6 py-5">
         <div className="flex-1">
-          <h3 className="text-center text-3xl mb-3"><span className="font-bold text-secondary">Get In</span> Touch</h3>
+          <h3 className="text-center text-3xl mb-3"><span className="font-bold text-secondary animate-pulse">Get In</span> Touch</h3>
 
           <form className="flex flex-col gap-3">
             <div className="flex gap-3">

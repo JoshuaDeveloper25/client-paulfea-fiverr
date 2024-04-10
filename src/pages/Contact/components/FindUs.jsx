@@ -4,7 +4,7 @@ const FindUs = () => {
       <article className="flex md:flex-row flex-col-reverse gap-8 py-5">
         <div className="flex-1">
           <h3 className="text-center text-3xl mb-3">
-            Find <span className="text-secondary font-bold">us!</span>
+            Find <span className="text-secondary font-bold animate-pulse">us!</span>
           </h3>
 
           <p className="mb-3 text-justify">

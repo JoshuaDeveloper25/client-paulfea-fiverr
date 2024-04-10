@@ -12,6 +12,7 @@ import Home from "./pages/Home/Home";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/LogIn/LogIn";
 import Contact from "./pages/Contact/Contact";
+import Pricing from "./pages/Pricing/Pricing";
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+
+      {
+        path: "/pricing",
+        element: <Pricing />,
       },
     ],
   },
