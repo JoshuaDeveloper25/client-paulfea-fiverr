@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import getInTouch from "../../../images/get-in-touch.jpg";
 
 const News = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="container-page px-3 my-7">
       <h3 className="text-center text-4xl mb-8">
@@ -56,6 +59,7 @@ const News = () => {
 
       <div className="text-center">
         <button
+          onClick={() => navigate(`/news`)}
           type="button"
           className="border border-secondary  sm:w-auto w-full px-4 hover:bg-secondary/80 hover:text-white animation-fade my-3 rounded py-1"
         >
