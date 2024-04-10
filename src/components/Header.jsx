@@ -73,8 +73,8 @@ const Header = () => {
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} href="/resources">
-                      Resources
+                    <Link onClick={() => setIsNavOpen(false)} href="/about">
+                      About
                     </Link>
                   </li>
 
@@ -85,8 +85,8 @@ const Header = () => {
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} href="/company">
-                      Company
+                    <Link onClick={() => setIsNavOpen(false)} href="/contact">
+                      Contact
                     </Link>
                   </li>
 
@@ -124,9 +124,9 @@ const Header = () => {
 
               <Link
                 className="hover:text-secondary transition-all duration-200"
-                to={`/resources`}
+                to={`/about`}
               >
-                Resources
+                About
               </Link>
 
               <Link
@@ -138,9 +138,9 @@ const Header = () => {
 
               <Link
                 className="hover:text-secondary transition-all duration-200"
-                to={`/company`}
+                to={`/contact`}
               >
-                Company
+                Contact
               </Link>
 
               {!state?.userInfo.token && (
