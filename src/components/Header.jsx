@@ -90,19 +90,25 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} to="/login">
-                      Log In
-                    </Link>
-                  </li>
+                  {!state?.userInfo.token && (
+                    <>
+                      <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                        <Link onClick={() => setIsNavOpen(false)} to="/login">
+                          Log In
+                        </Link>
+                      </li>
 
-                  <button
-                    onClick={signUp}
-                    type="button"
-                    className="border border-tertiary hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
-                  >
-                    Sign Up
-                  </button>
+                      <button
+                        onClick={signUp}
+                        type="button"
+                        className="border border-tertiary hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
+                      >
+                        Sign Up
+                      </button>
+                    </>
+                  )}
+
+                  {state?.userInfo.token && <DropDown />}
                 </ul>
               </div>
             </section>
