@@ -1,6 +1,11 @@
+import ReadyGetStarted from "../../components/ReadyGetStarted"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    {/* Ready to get started? */}
+    <ReadyGetStarted/>
+    </>
   )
 }
 

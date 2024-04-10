@@ -14,6 +14,7 @@ import LogIn from "./pages/LogIn/LogIn";
 import Contact from "./pages/Contact/Contact";
 import Pricing from "./pages/Pricing/Pricing";
 import About from "./pages/About/About";
+import Solutions from "./pages/Solutions.jsx/Solutions";
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -49,6 +50,11 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+
+      {
+        path: "/solutions",
+        element: <Solutions />,
       },
     ],
   },
