@@ -11,7 +11,7 @@ const Footer = () => {
               Newsletter:
             </label>
             <input
-              className="focus:border-secondary block border border-tertiary outline-none rounded px-2 py-1"
+              className="focus:border-secondary block border border-tertiary text-black outline-none rounded px-2 py-1"
               type="email"
               name="newsletter"
               id="newsletter"
