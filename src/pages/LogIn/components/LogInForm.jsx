@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import logo from "../../../images/logo.png";
+import { Link } from 'react-router-dom';
+import logo from '../../../images/logo.png';
 
-const LogInForm = () => {
+const LogInForm = ({ children }) => {
   return (
     <>
       <section className="container-page px-2 py-10">
@@ -12,11 +12,11 @@ const LogInForm = () => {
               decoding="async"
               className="w-36 mx-auto"
               src={logo}
-              alt={"Logo Hobbz"}
+              alt={'Logo Hobbz'}
             />
           </div>
 
-          <form className="bg-white shadow-lg px-3 py-4 rounded">
+          <div className="bg-white shadow-lg px-3 py-4 rounded">
             <h2 className="text-center text-2xl mb-5">Log In</h2>
 
             <div className="flex flex-col gap-3">
@@ -25,6 +25,8 @@ const LogInForm = () => {
                   type="email"
                   className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                   placeholder="Email"
+                  name="email"
+                  required
                 />
               </div>
 
@@ -33,21 +35,18 @@ const LogInForm = () => {
                   type="password"
                   className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                   placeholder="Password"
+                  name="password"
+                  required
                 />
               </div>
 
-              <button
-                type="button"
-                className="text-center w-full text-black border-secondary transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary"
-              >
-                Log In
-              </button>
+              {children}
             </div>
-          </form>
+          </div>
 
           <div className="my-3">
             <p className="text-center">
-              Don't have account?{" "}
+              Don't have account?{' '}
               <Link
                 to={`/signup`}
                 className="border-b border-tertiary hover:text-secondary hover:border-secondary animation-fade"
@@ -58,7 +57,12 @@ const LogInForm = () => {
           </div>
 
           <div className="flex justify-center gap-3">
-            <Link to={`/contact`} className="hover:text-secondary animation-fade">Contact</Link>
+            <Link
+              to={`/contact`}
+              className="hover:text-secondary animation-fade"
+            >
+              Contact
+            </Link>
             -
             <Link className="hover:text-secondary animation-fade">Privacy</Link>
             -<Link className="hover:text-secondary animation-fade">Terms</Link>

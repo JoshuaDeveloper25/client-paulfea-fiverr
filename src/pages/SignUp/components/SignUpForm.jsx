@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import logo from "../../../images/logo.png";
+import { Link } from 'react-router-dom';
+import logo from '../../../images/logo.png';
 
-const SignUpForm = () => {
+const SignUpForm = ({ children }) => {
   return (
     <>
       <section className="container-page px-2 py-10">
@@ -12,11 +12,11 @@ const SignUpForm = () => {
               decoding="async"
               className="w-36 mx-auto"
               src={logo}
-              alt={"Logo Hobbz"}
+              alt={'Logo Hobbz'}
             />
           </div>
 
-          <form className="bg-white shadow-lg px-3 py-4 rounded">
+          <div className="bg-white shadow-lg px-3 py-4 rounded">
             <h2 className="text-center text-2xl mb-5">Sign Up</h2>
 
             <div className="flex flex-col gap-3">
@@ -26,6 +26,8 @@ const SignUpForm = () => {
                     type="text"
                     className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                     placeholder="Name"
+                    name="name"
+                    required
                   />
                 </div>
 
@@ -34,6 +36,8 @@ const SignUpForm = () => {
                     type="text"
                     className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                     placeholder="Surname"
+                    name="surname"
+                    required
                   />
                 </div>
               </div>
@@ -43,6 +47,8 @@ const SignUpForm = () => {
                   type="text"
                   className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                   placeholder="Company"
+                  name="company"
+                  required
                 />
               </div>
 
@@ -51,6 +57,8 @@ const SignUpForm = () => {
                   type="email"
                   className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                   placeholder="Email"
+                  name="email"
+                  required
                 />
               </div>
 
@@ -59,21 +67,18 @@ const SignUpForm = () => {
                   type="password"
                   className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                   placeholder="Password"
+                  name="password"
+                  required
                 />
               </div>
 
-              <button
-                type="button"
-                className="text-center w-full text-black border-secondary transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary"
-              >
-                Sign Up
-              </button>
+              {children}
             </div>
-          </form>
+          </div>
 
           <div className="my-3">
             <p className="text-center">
-              Already have an account?{" "}
+              Already have an account?{' '}
               <Link
                 to={`/login`}
                 className="border-b border-tertiary hover:text-secondary hover:border-secondary animation-fade"
