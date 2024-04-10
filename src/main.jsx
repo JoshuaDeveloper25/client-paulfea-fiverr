@@ -13,6 +13,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/LogIn/LogIn";
 import Contact from "./pages/Contact/Contact";
 import Pricing from "./pages/Pricing/Pricing";
+import About from "./pages/About/About";
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <Pricing />,
+      },
+
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
