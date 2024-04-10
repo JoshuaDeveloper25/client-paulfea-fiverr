@@ -29,7 +29,13 @@ const AboutUsInformationOne = () => {
         </div>
 
         <div className="flex-1">
-          <img className="rounded" src={about} alt="About Image" />
+          <img
+            loading="lazy"
+            decoding="async"
+            className="rounded"
+            src={about}
+            alt="About Image"
+          />
         </div>
       </article>
     </section>

@@ -5,7 +5,13 @@ const AboutUsInformationTwo = () => {
     <section className="container-page px-3">
       <article className="flex flex-col md:flex-row gap-6 py-5">
         <div className="flex-1">
-          <img className="rounded" src={about2} alt="About Image" />
+          <img
+            loading="lazy"
+            decoding="async"
+            className="rounded"
+            src={about2}
+            alt="About Image"
+          />
         </div>
 
         <div className="flex-1">

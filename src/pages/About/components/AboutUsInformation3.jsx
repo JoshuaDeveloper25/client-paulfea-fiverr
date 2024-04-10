@@ -29,7 +29,13 @@ const AboutUsInformationThree = () => {
         </div>
 
         <div className="flex-1">
-          <img className="rounded" src={about3} alt="About Image" />
+          <img
+            loading="lazy"
+            decoding="async"
+            className="rounded"
+            src={about3}
+            alt="About Image"
+          />
         </div>
       </article>
     </section>
