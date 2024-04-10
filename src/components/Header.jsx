@@ -17,7 +17,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div>
             <Link>
-              <img className="relative z-[1000] w-28" src={logo} alt={`Logo`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="relative z-[1000] w-28"
+                src={logo}
+                alt={`Logo`}
+              />
             </Link>
           </div>
 
@@ -59,33 +65,33 @@ const Header = () => {
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center gap-6 justify-between min-h-[250px]">
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a onClick={() => setIsNavOpen(false)} href="/solutions">
+                    <Link onClick={() => setIsNavOpen(false)} href="/solutions">
                       Solutions
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a onClick={() => setIsNavOpen(false)} href="/resources">
+                    <Link onClick={() => setIsNavOpen(false)} href="/resources">
                       Resources
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a onClick={() => setIsNavOpen(false)} href="/pricing">
+                    <Link onClick={() => setIsNavOpen(false)} href="/pricing">
                       Pricing
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a onClick={() => setIsNavOpen(false)} href="/company">
+                    <Link onClick={() => setIsNavOpen(false)} href="/company">
                       Company
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <a onClick={() => setIsNavOpen(false)} to="/login">
+                    <Link onClick={() => setIsNavOpen(false)} to="/login">
                       Log In
-                    </a>
+                    </Link>
                   </li>
 
                   <button

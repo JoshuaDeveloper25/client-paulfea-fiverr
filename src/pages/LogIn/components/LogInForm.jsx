@@ -7,7 +7,13 @@ const LogInForm = () => {
       <section className="container-page px-2 py-10">
         <div className="max-w-sm mx-auto">
           <div>
-            <img className="w-36 mx-auto" src={logo} alt={"Logo Hobbz"} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-36 mx-auto"
+              src={logo}
+              alt={"Logo Hobbz"}
+            />
           </div>
 
           <form className="bg-white shadow-lg px-3 py-4 rounded">

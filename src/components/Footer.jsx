@@ -7,10 +7,7 @@ const Footer = () => {
         {/* NewsLetter */}
         <div>
           <div className="sm:mb-0 mb-3">
-            <label
-              className="font-bold"
-              htmlFor="newsletter"
-            >
+            <label className="font-bold" htmlFor="newsletter">
               Newsletter:
             </label>
             <input
@@ -34,13 +31,22 @@ const Footer = () => {
           </h2>
 
           <div className="flex flex-col items-center">
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/x`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               X
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/y`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Y
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/z`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Z
             </Link>
           </div>
@@ -53,10 +59,16 @@ const Footer = () => {
           </h2>
 
           <div className="flex flex-col items-center">
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/blog`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Blog
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/faq`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               FAQ's
             </Link>
           </div>
@@ -69,13 +81,22 @@ const Footer = () => {
           </h2>
 
           <div className="flex flex-col items-center">
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/about`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               About
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/contact`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Contact
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/pricing`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Pricing
             </Link>
           </div>
@@ -88,13 +109,22 @@ const Footer = () => {
           </h2>
 
           <div className="flex flex-col items-center">
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/privacy`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Privacy
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/cookie`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Cookie
             </Link>
-            <Link className="hover:text-secondary transition-all duration-150">
+            <Link
+              to={`/terms`}
+              className="hover:text-secondary transition-all duration-150"
+            >
               Terms
             </Link>
           </div>

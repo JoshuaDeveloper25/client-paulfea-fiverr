@@ -7,7 +7,13 @@ const SignUpForm = () => {
       <section className="container-page px-2 py-10">
         <div className="max-w-sm mx-auto">
           <div>
-            <img className="w-36 mx-auto" src={logo} alt={"Logo Hobbz"} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-36 mx-auto"
+              src={logo}
+              alt={"Logo Hobbz"}
+            />
           </div>
 
           <form className="bg-white shadow-lg px-3 py-4 rounded">
@@ -78,7 +84,10 @@ const SignUpForm = () => {
           </div>
 
           <div className="flex justify-center gap-3">
-            <Link className="hover:text-secondary animation-fade">Contact</Link>-<Link className="hover:text-secondary animation-fade">Privacy</Link>-<Link className="hover:text-secondary animation-fade">Terms</Link>
+            <Link className="hover:text-secondary animation-fade">Contact</Link>
+            -
+            <Link className="hover:text-secondary animation-fade">Privacy</Link>
+            -<Link className="hover:text-secondary animation-fade">Terms</Link>
           </div>
         </div>
       </section>

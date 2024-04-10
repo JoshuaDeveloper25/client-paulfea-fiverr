@@ -1,6 +1,8 @@
+// --> Common and important imports from react
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// --> React Router Dom Imports and also styles from css
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
@@ -9,7 +11,9 @@ import Root from "./pages/Root";
 import Home from "./pages/Home/Home";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/LogIn/LogIn";
+import Contact from "./pages/Contact/Contact";
 
+// Paths of all webpages from application
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +32,11 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <LogIn />,
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
