@@ -4,8 +4,8 @@ import logo from "../../../images/logo.png";
 const Features = () => {
   return (
     <>
-      <section className="container-page px-2 my-8">
-        <h3 className="text-center text-3xl mb-8">
+      <section className="container-page px-2 my-20">
+        <h3 className="text-center text-3xl mb-14">
           <span className="font-bold text-secondary animate-pulse">
             Features /
           </span>{" "}

@@ -61,51 +61,51 @@ const Carousel = ({
   return (
     <Slider {...settings}>
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleOne}</h3>
-        <p>{paragraphOne}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleOne}</h3>
+        <p className="text-sm text-gray-500">{paragraphOne}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleTwo}</h3>
-        <p>{paragraphTwo}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleTwo}</h3>
+        <p className="text-sm text-gray-500">{paragraphTwo}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleThree}</h3>
-        <p>{paragraphThree}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleThree}</h3>
+        <p className="text-sm text-gray-500">{paragraphThree}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleFour}</h3>
-        <p>{paragraphFour}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleFour}</h3>
+        <p className="text-sm text-gray-500">{paragraphFour}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleFive}</h3>
-        <p>{paragraphFive}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleFive}</h3>
+        <p className="text-sm text-gray-500">{paragraphFive}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleSix}</h3>
-        <p>{paragraphSix}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleSix}</h3>
+        <p className="text-sm text-gray-500">{paragraphSix}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleSeven}</h3>
-        <p>{paragraphSeven}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleSeven}</h3>
+        <p className="text-sm text-gray-500">{paragraphSeven}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-24 mx-auto mb-1" />
-        <h3>{titleEight}</h3>
-        <p>{paragraphEight}</p>
+        <img src={image} className="w-36 mx-auto mb-1" />
+        <h3 className="text-gray-600 font-bold text-lg">{titleEight}</h3>
+        <p className="text-sm text-gray-500">{paragraphEight}</p>
       </div>
     </Slider>
   );

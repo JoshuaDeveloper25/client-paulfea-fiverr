@@ -7,12 +7,13 @@ const News = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="container-page px-3 my-7">
+    <section className="container-page px-3 my-16">
       <h3 className="text-center text-4xl">
         <span className="font-bold text-secondary  animate-pulse">Ne</span>ws
       </h3>
-      <p className="text-center text-gray-500 text-md mb-8">Lastest news, tips and best practices.</p>
-
+      <p className="text-center text-gray-500 text-md mb-8">
+        Lastest news, tips and best practices.
+      </p>
 
       <div className="flex flex-wrap justify-center row-gap-3 gap-7">
         <div className="max-w-[20rem] shadow-lg rounded-sm">
@@ -94,7 +95,7 @@ const News = () => {
         </div>
       </div>
 
-      <div className="text-center">
+      <div className="text-center mt-6">
         <button
           onClick={() => navigate(`/news`)}
           type="button"

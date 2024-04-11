@@ -1,7 +1,7 @@
-import { Link, useNavigate } from 'react-router-dom';
-import logo from '../images/logo.png';
-import { useContext, useState } from 'react';
-import { UserContext } from '../context';
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../images/logo.png";
+import { useContext, useState } from "react";
+import { UserContext } from "../context";
 
 const Header = () => {
   const { state } = useContext(UserContext);
@@ -44,8 +44,8 @@ const Header = () => {
               <div
                 className={
                   isNavOpen
-                    ? 'fixed hamburguer-open w-full h-[100vh] top-0 left-0 bg-white z-10 flex flex-col justify-evenly items-center'
-                    : 'hidden'
+                    ? "fixed hamburguer-open w-full h-[100vh] top-0 left-0 bg-white z-10 flex flex-col justify-evenly items-center"
+                    : "hidden"
                 }
               >
                 <div
@@ -66,33 +66,33 @@ const Header = () => {
                   </svg>
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center gap-6 justify-between min-h-[250px]">
-                  <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} href="/solutions">
+                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <Link onClick={() => setIsNavOpen(false)} to="/solutions">
                       Solutions
                     </Link>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} href="/about">
+                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <Link onClick={() => setIsNavOpen(false)} to="/about">
                       About
                     </Link>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} href="/pricing">
+                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <Link onClick={() => setIsNavOpen(false)} to="/pricing">
                       Pricing
                     </Link>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} href="/contact">
+                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <Link onClick={() => setIsNavOpen(false)} to="/contact">
                       Contact
                     </Link>
                   </li>
 
                   {!state?.userInfo.token && (
                     <>
-                      <li className="border-b border-gray-400 hover:text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                      <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
                         <Link onClick={() => setIsNavOpen(false)} to="/login">
                           Log In
                         </Link>
@@ -101,7 +101,7 @@ const Header = () => {
                       <button
                         onClick={signUp}
                         type="button"
-                        className="border border-tertiary hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
+                        className="bg-secondary text-white hover:bg-secondary/50 hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
                       >
                         Sign Up
                       </button>
@@ -116,28 +116,28 @@ const Header = () => {
             {/* DESKTOP-MENU */}
             <ul className="hidden space-x-8 lg:flex items-center">
               <Link
-                className="hover:text-secondary transition-all duration-200"
+                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
                 to={`/solutions`}
               >
                 Solutions
               </Link>
 
               <Link
-                className="hover:text-secondary transition-all duration-200"
+                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
                 to={`/about`}
               >
                 About
               </Link>
 
               <Link
-                className="hover:text-secondary transition-all duration-200"
+                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
                 to={`/pricing`}
               >
                 Pricing
               </Link>
 
               <Link
-                className="hover:text-secondary transition-all duration-200"
+                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
                 to={`/contact`}
               >
                 Contact
@@ -146,7 +146,7 @@ const Header = () => {
               {!state?.userInfo.token && (
                 <>
                   <Link
-                    className="hover:text-secondary transition-all duration-200"
+                    className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
                     to={`/login`}
                   >
                     Log in
@@ -154,9 +154,9 @@ const Header = () => {
 
                   <div>
                     <button
-                      onClick={() => navigate(`/signup`)}
+                      onClick={signUp}
                       type="button"
-                      className="border border-tertiary hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
+                      className="bg-secondary text-white hover:bg-secondary/50 hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
                     >
                       Sign Up
                     </button>
@@ -206,21 +206,21 @@ const DropDown = () => {
       <div
         id="dropdown-menu"
         className={`${
-          !isOpen && 'hidden'
+          !isOpen && "hidden"
         } absolute right-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1`}
       >
-        {state?.userInfo?.role === 'admin' && (
+        {state?.userInfo?.role === "admin" && (
           <>
             <Link
               to="/manage-users"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 hover:text-secondary/90 cursor-pointer rounded-md"
             >
               Manage Users
             </Link>
 
             <Link
               to="/manage-news"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 hover:text-secondary/90 cursor-pointer rounded-md"
             >
               Manage News
             </Link>
@@ -229,8 +229,8 @@ const DropDown = () => {
 
         <Link
           to="#"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
-          onClick={() => dispatch({ type: 'LOG_OUT' })}
+          className="block px-4 py-2 text-red-700 hover:bg-red-300/50 active:bg-blue-100 cursor-pointer rounded-md"
+          onClick={() => dispatch({ type: "LOG_OUT" })}
         >
           Sign Out
         </Link>
