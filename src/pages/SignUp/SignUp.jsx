@@ -1,26 +1,27 @@
-import SignUpForm from './components/SignUpForm';
-import axios from 'axios';
-import { useMutation } from '@tanstack/react-query';
-import { useNavigate } from 'react-router-dom';
+import SignUpForm from "./components/SignUpForm";
+import axios from "axios";
+import { useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { getError } from "../../utils/getError";
 
 const SignUp = () => {
   const navigate = useNavigate();
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data) =>
-      await axios.post('/users/register', data).then((res) => res.data),
+      await axios.post("/users/register", data).then((res) => res.data),
 
     onSuccess: (data) => {
       console.log(data);
-
       alert(data.message);
-
-      navigate('/login');
+      toast.success(`Sucessfully registered!`);
+      navigate("/login");
     },
 
     onError: (err) => {
       console.log(err);
-      alert('Error');
+      toast.error(getError(err));
     },
   });
 
@@ -30,11 +31,11 @@ const SignUp = () => {
     const formData = new FormData(e.target);
 
     const data = {
-      name: formData.get('name'),
-      surname: formData.get('surname'),
-      company: formData.get('company'),
-      email: formData.get('email'),
-      password: formData.get('password'),
+      name: formData.get("name"),
+      surname: formData.get("surname"),
+      company: formData.get("company"),
+      email: formData.get("email"),
+      password: formData.get("password"),
     };
 
     mutate(data);

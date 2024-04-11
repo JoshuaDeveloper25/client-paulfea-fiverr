@@ -1,15 +1,16 @@
 /* eslint-disable react/prop-types */
-import axios from 'axios';
-import { useReducer, createContext } from 'react';
+import axios from "axios";
+import { useReducer, createContext } from "react";
+import { toast } from "react-toastify";
 
 export const UserContext = createContext();
 
 // MiReducer.js
 const initialState = {
-  userInfo: JSON.parse(localStorage.getItem('user')) || {},
+  userInfo: JSON.parse(localStorage.getItem("user")) || {},
 };
 
-axios.defaults.headers.common['Authorization'] = initialState?.userInfo?.token
+axios.defaults.headers.common["Authorization"] = initialState?.userInfo?.token
   ? `Bearer ${initialState.userInfo.token}`
   : null;
 
@@ -17,21 +18,23 @@ axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'LOG_IN':
-      localStorage.setItem('user', JSON.stringify(action.payload));
+    case "LOG_IN":
+      localStorage.setItem("user", JSON.stringify(action.payload));
 
       // Colocando token globalmente
       axios.defaults.headers.common[
-        'Authorization'
+        "Authorization"
       ] = `Bearer ${action.payload.token}`;
 
       return { ...state, userInfo: { ...action.payload } };
 
-    case 'LOG_OUT':
-      localStorage.removeItem('user');
+    case "LOG_OUT":
+      localStorage.removeItem("user");
 
       // Removiendo token globalmente
-      axios.defaults.headers.common['Authorization'] = null;
+      axios.defaults.headers.common["Authorization"] = null;
+
+      toast.success(`Successfully logged out!`);
 
       return { ...state, userInfo: {} };
 

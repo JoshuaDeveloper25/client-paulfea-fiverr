@@ -9,6 +9,9 @@ import { PublicRoutes } from "./auth/PublicRoutes";
 import { UserProvider } from "./context";
 import "./index.css";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 // --> Pages from application
 import Root from "./pages/Root";
 import Home from "./pages/Home/Home";
@@ -19,6 +22,7 @@ import Pricing from "./pages/Pricing/Pricing";
 import About from "./pages/About/About";
 import Solutions from "./pages/Solutions.jsx/Solutions";
 import News from "./pages/News/News";
+import ManageUsers from "./admin/ManageUsers";
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -70,6 +74,11 @@ const router = createBrowserRouter([
         path: "/news",
         element: <News />,
       },
+
+      {
+        path: "/manage-users",
+        element: <ManageUsers />,
+      },
     ],
   },
 ]);
@@ -79,6 +88,7 @@ const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <QueryClientProvider client={queryClient}>
     <UserProvider>
+      <ToastContainer stacked position="bottom-center" />
       <RouterProvider router={router} />
     </UserProvider>
   </QueryClientProvider>

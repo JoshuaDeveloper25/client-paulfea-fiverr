@@ -1,23 +1,26 @@
-import axios from 'axios';
-import LogInForm from './components/LogInForm';
-import { useMutation } from '@tanstack/react-query';
-import { useContext } from 'react';
-import { UserContext } from '../../context';
+import { useMutation } from "@tanstack/react-query";
+import LogInForm from "./components/LogInForm";
+import { UserContext } from "../../context";
+import { toast } from "react-toastify";
+import { useContext } from "react";
+import axios from "axios";
+import { getError } from "../../utils/getError";
 
 const LogIn = () => {
   const { dispatch } = useContext(UserContext);
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data) =>
-      await axios.post('/users/login', data).then((res) => res.data),
+      await axios.post("/users/login", data).then((res) => res.data),
 
     onSuccess: (data) => {
       console.log(data);
-      dispatch({ type: 'LOG_IN', payload: data });
+      dispatch({ type: "LOG_IN", payload: data });
+      toast.success("Successfully logged in!");
     },
 
     onError: (err) => {
-      alert('Error');
+      toast.error(getError(err));
     },
   });
 
@@ -27,8 +30,8 @@ const LogIn = () => {
     const formData = new FormData(e.target);
 
     const data = {
-      email: formData.get('email'),
-      password: formData.get('password'),
+      email: formData.get("email"),
+      password: formData.get("password"),
     };
 
     mutate(data);

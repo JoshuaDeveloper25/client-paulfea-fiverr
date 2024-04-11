@@ -10,6 +10,10 @@
   .animation-fade {
     @apply transition-all duration-150 ease-in-out;
   }
+
+  .button-primary {
+    @apply text-center w-full text-black border-secondary transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary disabled:opacity-40;
+  }
 }
 
 .slick-next:before,
