@@ -16,34 +16,26 @@ const MoreInformation = () => {
           </div>
         </div>
 
-        <div className="flex-1 md:text-end text-start">
-          <h3 className="text-3xl mb-3">
+        <div className="flex-1">
+          <h3 className="text-3xl mb-3 border-b-2 border-secondary pb-3">
             <span className="font-bold text-secondary animate-pulse">
-              Why Choose
-            </span>{" "}
-            Us?
+              Lorem ipsum dolor sit amet.
+            </span>
           </h3>
 
-          <p>
+          <p className="text-gray-500">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
             asperiores est unde delectus cupiditate temporibus laboriosam
             provident culpa nam corrupti aperiam, iure numquam fugiat aliquam
             error, doloribus perspiciatis accusantium architecto!
           </p>
 
-          <p className="mt-3">
+          <p className="text-gray-500 mt-3">
             Asinc adipisicing elit. Maiores asperiores est unde delectus
             cupiditate temporibus laboriosam provident culpa nam corrupti
             aperiam, iure numquam fugiat aliquam error, doloribus perspiciatis
             accusantium architecto!
           </p>
-
-          <button
-            className="bg-secondary md:w-auto w-full rounded animation-fade hover:bg-tertiary text-white px-4 py-1 mt-5"
-            type="button"
-          >
-            More Information
-          </button>
         </div>
       </article>
     </section>

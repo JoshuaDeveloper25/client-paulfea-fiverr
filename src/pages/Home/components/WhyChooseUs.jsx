@@ -1,4 +1,5 @@
 import getInTouch from "../../../images/get-in-touch.jpg";
+import { FaCheck } from "react-icons/fa6";
 
 const WhyChooseUs = () => {
   return (
@@ -12,25 +13,56 @@ const WhyChooseUs = () => {
             Us?
           </h3>
 
-          <p>
+          <p className="text-gray-500 text-sm leading-6">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
             asperiores est unde delectus cupiditate temporibus laboriosam
-            provident culpa nam corrupti aperiam, iure numquam fugiat aliquam
-            error, doloribus perspiciatis accusantium architecto!
+            provident culpa nam corrupti aperiam, perspiciatis accusantium
+            architecto!
           </p>
 
-          <p className="mt-3">
-            Asinc adipisicing elit. Maiores
-            asperiores est unde delectus cupiditate temporibus laboriosam
-            provident culpa nam corrupti aperiam, iure numquam fugiat aliquam
-            error, doloribus perspiciatis accusantium architecto!
-          </p>
+          <div className="space-y-2 my-4">
+            <div className="flex items-center gap-3">
+              <div>
+                <FaCheck className="text-secondary" />
+              </div>
+
+              <div>
+                <p className="text-sm text-gray-500">
+                  Quia magni netsum eos qui ratione sequi.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div>
+                <FaCheck className="text-secondary" />
+              </div>
+
+              <div>
+                <p className="text-sm text-gray-500">
+                  Quia magni netsum eos qui ratione sequi.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div>
+                <FaCheck className="text-secondary" />
+              </div>
+
+              <div>
+                <p className="text-sm text-gray-500">
+                  Quia magni netsum eos qui ratione sequi.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <button
-            className="bg-secondary md:w-auto w-full rounded animation-fade hover:bg-tertiary text-white px-4 py-1 mt-5"
+            className="bg-secondary md:w-auto w-full rounded animation-fade hover:bg-tertiary text-white px-4 py-1 shadow-lg"
             type="button"
           >
-            More Information
+            Get Started
           </button>
         </div>
 
