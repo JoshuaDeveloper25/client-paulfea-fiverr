@@ -16,9 +16,9 @@ const News = () => {
       </p>
 
       <div className="flex flex-wrap justify-center row-gap-3 gap-7">
-        <div className="max-w-[20rem] shadow-lg rounded-sm">
+        <div className="max-w-[23rem] shadow-lg rounded-sm">
           <img src={getInTouch} className="rounded-sm" />
-          <div className="px-3 py-2">
+          <div className="px-4 py-6">
             <h3 className="text-md font-bold text-secondary">
               The Guide To LinkdIn Ads
             </h3>
@@ -42,9 +42,9 @@ const News = () => {
           </div>
         </div>
 
-        <div className="max-w-[20rem] shadow-lg rounded-sm">
+        <div className="max-w-[23rem] shadow-lg rounded-sm">
           <img src={getInTouch} className="rounded-sm" />
-          <div className="px-3 py-2">
+          <div className="px-4 py-6">
             <h3 className="text-md font-bold text-secondary">
               The Guide To LinkdIn Ads
             </h3>
@@ -68,9 +68,9 @@ const News = () => {
           </div>
         </div>
 
-        <div className="max-w-[20rem] shadow-lg rounded-sm">
+        <div className="max-w-[23rem] shadow-lg rounded-sm">
           <img src={getInTouch} className="rounded-sm" />
-          <div className="px-3 py-2">
+          <div className="px-4 py-6">
             <h3 className="text-md font-bold text-secondary">
               The Guide To LinkdIn Ads
             </h3>

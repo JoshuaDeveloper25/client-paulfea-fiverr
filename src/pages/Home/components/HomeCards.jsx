@@ -14,13 +14,13 @@ const HomeCards = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center row-gap-4 gap-8">
-        <div className="max-w-[20rem] border hover:border-b-secondary rounded-b-lg animation-fade shadow-lg">
+      <div className="flex flex-wrap justify-center row-gap-4 gap-8 mt-14">
+        <div className="max-w-[20rem] border hover:border-b-secondary rounded-lg animation-fade shadow-lg">
           <div className="max-w-30">
             <img
               loading="lazy"
               decoding="async"
-              className="w-full"
+              className="w-full pt-5"
               src={cardImage}
               alt="Card Image 1"
             />
@@ -36,19 +36,19 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
-              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 my-3 rounded py-1"
+              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
             </button>
           </div>
         </div>
 
-        <div className="max-w-[20rem] border hover:border-b-secondary rounded-b-lg animation-fade shadow-lg">
+        <div className="max-w-[20rem] border hover:border-b-secondary rounded-lg animation-fade shadow-lg">
           <div className="max-w-30">
             <img
               loading="lazy"
               decoding="async"
-              className="w-full"
+              className="w-full pt-5"
               src={cardImage}
               alt="Card Image 1"
             />
@@ -64,19 +64,19 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
-              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 my-3 rounded py-1"
+              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
             </button>
           </div>
         </div>
 
-        <div className="max-w-[20rem] border hover:border-b-secondary rounded-b-lg animation-fade shadow-lg">
+        <div className="max-w-[20rem] border hover:border-b-secondary rounded-lg animation-fade shadow-lg">
           <div className="max-w-30">
             <img
               loading="lazy"
               decoding="async"
-              className="w-full"
+              className="w-full pt-5"
               src={cardImage}
               alt="Card Image 1"
             />
@@ -92,7 +92,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
-              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 my-3 rounded py-1"
+              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
             </button>

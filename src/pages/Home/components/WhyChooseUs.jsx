@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const WhyChooseUs = () => {
   return (
-    <section className="container-page px-3">
+    <section className="container-page px-3 my-32">
       <article className="flex md:flex-row flex-col-reverse gap-6 py-5">
         <div className="flex-1">
           <h3 className="text-3xl mb-3">
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             architecto!
           </p>
 
-          <div className="space-y-2 my-4">
+          <div className="space-y-3 my-7">
             <div className="flex items-center gap-3">
               <div>
                 <FaCheck className="text-secondary" />

@@ -212,6 +212,13 @@ const DropDown = () => {
         {state?.userInfo?.role === "admin" && (
           <>
             <Link
+              to="/admin"
+              target="_blank"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 hover:text-secondary/90 cursor-pointer rounded-md"
+            >
+              Admin
+            </Link>
+            {/* <Link
               to="/manage-users"
               className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 hover:text-secondary/90 cursor-pointer rounded-md"
             >
@@ -223,7 +230,7 @@ const DropDown = () => {
               className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 hover:text-secondary/90 cursor-pointer rounded-md"
             >
               Manage News
-            </Link>
+            </Link> */}
           </>
         )}
 
