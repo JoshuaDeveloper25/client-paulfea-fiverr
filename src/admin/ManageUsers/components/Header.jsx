@@ -18,7 +18,6 @@ const Header = () => {
       queryClient.invalidateQueries(["users"]);
       toast.success(`Sucessfully registered!`);
       setShowModal(!showModal);
-      prueba("cerrado");
       console.log(data);
     },
 
