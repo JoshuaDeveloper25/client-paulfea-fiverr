@@ -1,21 +1,26 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import ModalComponent from "../../../components/ModalComponent";
-import { getError } from "../../../utils/getError";
-import { toast } from "react-toastify";
-import { useState } from "react";
-import axios from "axios";
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+import ModalComponent from '../../../components/ModalComponent';
+import { getError } from '../../../utils/getError';
+import { toast } from 'react-toastify';
+import { useState } from 'react';
+import axios from 'axios';
 
-const Header = () => {
+const Header = ({
+  addTextInfo,
+  handleChangeInfo,
+  deleteTextInfo,
+  textInfo,
+}) => {
   const [showModal, setShowModal] = useState(false);
 
   const queryClient = useQueryClient();
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data) =>
-      await axios.post("/news/create-news", data).then((res) => res.data),
+      await axios.post('/news/create-news', data).then((res) => res.data),
 
     onSuccess: (data) => {
-      queryClient.invalidateQueries(["news"]);
+      queryClient.invalidateQueries(['news']);
       toast.success(`Sucessfully registered!`);
       setShowModal(!showModal);
       console.log(data);
@@ -31,14 +36,11 @@ const Header = () => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
+    console.log(textInfo)
+    // return
+    formData.append('textInfo', JSON.stringify(textInfo))
 
-    const data = {
-      title: formData.get("title"),
-      category: formData.get("category"),
-      uploadImages: formData.get("uploadImages"),
-    };
-
-    mutate(data);
+    mutate(formData);
   };
 
   return (
@@ -46,8 +48,8 @@ const Header = () => {
       <ModalComponent
         setShowModal={setShowModal}
         showModal={showModal}
-        textBtn={"Create New"}
-        titleModal={"Create New"}
+        textBtn={'Create New'}
+        titleModal={'Create New'}
         // SecondaryBtn={() => <ImportUsers setRefreshRender={setRefreshRender} />}
       >
         <form onSubmit={handleSubmit}>
@@ -78,8 +80,51 @@ const Header = () => {
                 className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                 name="uploadImages"
                 required
+                accept="image/*"
               />
             </div>
+
+            <h2 className="font-bold">Aditional Text</h2>
+
+            {textInfo.map((item, idx) => (
+              <div className="flex-1" key={idx}>
+                <header>
+                  <h3>Text {idx + 1}</h3>
+                  <button
+                    type="button"
+                    className="text-red-400 hover:scale-105 transition-all"
+                    onClick={() => deleteTextInfo(idx)}
+                  >
+                    Delete
+                  </button>
+                </header>
+
+                <div className="pl-5">
+                  <input
+                    className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border mb-2"
+                    name={`subheader-${idx}`}
+                    onChange={handleChangeInfo}
+                    value={item?.subheader || ''}
+                    placeholder="Sub-header"
+                  />
+                  <input
+                    className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
+                    name={`paragraph-${idx}`}
+                    onChange={handleChangeInfo}
+                    value={item?.paragraph || ''}
+                    placeholder="Paragraph"
+                  />
+                </div>
+              </div>
+            ))}
+
+            <button
+              className="bg-blue-300 text-white py-1"
+              onClick={addTextInfo}
+              type="button"
+            >
+              Add Aditional Text
+            </button>
 
             <button className="button-primary" disabled={isPending}>
               Register

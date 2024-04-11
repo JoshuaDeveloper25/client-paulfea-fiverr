@@ -111,7 +111,7 @@ const Header = () => {
                   {state?.userInfo.token && <DropDown />}
                 </ul>
               </div>
-            </section>
+            </section> 
 
             {/* DESKTOP-MENU */}
             <ul className="hidden space-x-8 lg:flex items-center">
