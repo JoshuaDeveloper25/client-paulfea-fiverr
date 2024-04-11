@@ -23,6 +23,7 @@ import About from "./pages/About/About";
 import Solutions from "./pages/Solutions.jsx/Solutions";
 import News from "./pages/News/News";
 import ManageUsers from "./admin/ManageUsers";
+import ManageNews from "./admin/ManageNews";
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -78,6 +79,11 @@ const router = createBrowserRouter([
       {
         path: "/manage-users",
         element: <ManageUsers />,
+      },
+
+      {
+        path: "/manage-news",
+        element: <ManageNews />,
       },
     ],
   },

@@ -43,3 +43,42 @@ export const CellCustomUser = ({ info, setInfoRow }) => {
     </>
   );
 };
+
+export const CellCustomNew = ({ info, setInfoRow }) => {
+  const queryClient = useQueryClient();
+
+  return (
+    <>
+      <Dropdown
+        options={[
+          {
+            text: "Edit",
+            action: async () => {
+              setInfoRow(info);
+            },
+          },
+
+          {
+            text: "Delete",
+            action: async () => {
+              const user_request = confirm(
+                `Are you sure, you want to delete this new?`
+              );
+
+              if (!user_request) {
+                return;
+              }
+
+              try {
+                await axios.delete(`news/delete-new/${info._id}`);
+                queryClient.invalidateQueries(["news"]);
+              } catch (error) {
+                toast.error(getError(error));
+              }
+            },
+          },
+        ]}
+      />
+    </>
+  );
+};

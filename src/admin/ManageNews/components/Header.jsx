@@ -1,59 +1,30 @@
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { CellCustomNew } from "../../components/CellCustom";
-import EditModalNew from "./components/EditModalNews";
-import { Table } from "../../components/Table";
-import Header from "./components/Header";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import ModalComponent from "../../../components/ModalComponent";
+import { getError } from "../../../utils/getError";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
 
-const ManageNews = () => {
-  const [infoRow, setInfoRow] = useState(null);
+const Header = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const queryClient = useQueryClient();
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data) =>
-      await axios
-        .put(`/news/edit-new/${infoRow._id}`, data)
-        .then((res) => res.data),
-    onSuccess: () => {
-      setInfoRow(null);
-      toast.success(`New Edited Successfully!`);
+      await axios.post("/news/create-news", data).then((res) => res.data),
+
+    onSuccess: (data) => {
       queryClient.invalidateQueries(["news"]);
+      toast.success(`Sucessfully registered!`);
+      setShowModal(!showModal);
+      console.log(data);
     },
+
     onError: (err) => {
+      toast.error(getError(err));
       console.log(err);
     },
-  });
-
-  const columns = [
-    {
-      header: "Title",
-      accessorKey: "title",
-    },
-
-    {
-      header: "Category",
-      accessorKey: "category",
-    },
-
-    {
-      header: "Upload Image",
-      accessorKey: "uploadImages",
-    },
-
-    {
-      header: "Actions",
-      cell: (info) => (
-        <CellCustomNew setInfoRow={setInfoRow} info={info.cell.row.original} />
-      ),
-    },
-  ];
-
-  const { data, isLoading } = useQuery({
-    queryKey: ["news"],
-    queryFn: async () =>
-      await axios?.get("/news/get-news").then((res) => res.data),
   });
 
   const handleSubmit = (e) => {
@@ -70,22 +41,13 @@ const ManageNews = () => {
     mutate(data);
   };
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
   return (
-    <div className="container-page px-3 my-5">
-      {/* --> Header */}
-      <Header />
-
-      {/* --> Table */}
-      <Table columns={columns} data={data} />
-
-      <EditModalNew
-        setShowModal={setInfoRow}
-        showModal={infoRow}
-        titleModal={"Edit New"}
+    <div>
+      <ModalComponent
+        setShowModal={setShowModal}
+        showModal={showModal}
+        textBtn={"Create New"}
+        titleModal={"Create New"}
         // SecondaryBtn={() => <ImportUsers setRefreshRender={setRefreshRender} />}
       >
         <form onSubmit={handleSubmit}>
@@ -96,7 +58,6 @@ const ManageNews = () => {
                 className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                 placeholder="Title"
                 name="title"
-                defaultValue={infoRow?.title}
                 required
               />
             </div>
@@ -107,7 +68,6 @@ const ManageNews = () => {
                 className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                 placeholder="Category"
                 name="category"
-                defaultValue={infoRow?.category}
                 required
               />
             </div>
@@ -117,7 +77,6 @@ const ManageNews = () => {
                 type="file"
                 className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                 name="uploadImages"
-                defaultValue={infoRow?.uploadImages}
                 required
               />
             </div>
@@ -127,9 +86,9 @@ const ManageNews = () => {
             </button>
           </div>
         </form>
-      </EditModalNew>
+      </ModalComponent>
     </div>
   );
 };
 
-export default ManageNews;
+export default Header;
