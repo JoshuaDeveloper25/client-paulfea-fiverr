@@ -5,18 +5,17 @@ const ReadyGetStarted = () => {
 
   return (
     <section className="mx-3">
-      <div className="container-page px-3 py-7 rounded my-5 border bg-secondary">
-        <h2 className="text-center text-3xl mb-4">
+      <div className="container-page px-3 py-7 rounded my-5 border bg-secondary text-white">
+        <h2 className="text-center text-3xl mb-4 font-bold">
           Ready to get{" "}
-          <span className="animate-pulse font-bold text-white">
-            started?
-          </span>
+          <span className="animate-pulse text-white">started?</span>
         </h2>
 
         <div className="flex justify-center gap-4 mt-7">
           <div>
             <button
-              className="border border-white animation-fade hover:text-white hover:bg-tertiary text-white hover:border-transparent rounded px-2 py-1"
+              className="border bg-white text-secondary animation-fade hover:scale-110   rounded px-2 py-1"
+              style={{ backfaceVisibility: "hidden" }}
               type="button"
             >
               Start Now
@@ -25,7 +24,8 @@ const ReadyGetStarted = () => {
 
           <div>
             <button
-              className="border border-white animation-fade hover:text-white hover:bg-tertiary text-white hover:border-transparent rounded px-2 py-1"
+              className="border border-white animation-fade hover:scale-110 hover:text-white text-white  rounded px-2 py-1"
+              style={{ backfaceVisibility: "hidden" }}
               type="button"
               onClick={() => navigate(`/contact`)}
             >
