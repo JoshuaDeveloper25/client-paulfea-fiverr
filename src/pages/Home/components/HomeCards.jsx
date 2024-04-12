@@ -1,4 +1,6 @@
-import cardImage from "../../../images/about3.png";
+import cardImageOne from "../../../images/container1.png";
+import cardImageTwo from "../../../images/container2.png";
+import cardImageThree from "../../../images/container3.png";
 
 const HomeCards = () => {
   return (
@@ -16,23 +18,22 @@ const HomeCards = () => {
 
       <div className="flex flex-wrap justify-center row-gap-4 gap-8 mt-14">
         <div className="max-w-[20rem] border hover:border-b-secondary rounded-lg animation-fade shadow-lg">
-          <div className="max-w-30">
+          <div className="max-w-48 mx-auto">
             <img
               loading="lazy"
               decoding="async"
               className="w-full pt-5"
-              src={cardImage}
+              src={cardImageOne}
               alt="Card Image 1"
             />
           </div>
           <div className="text-center px-4">
             <h3 className="my-2  font-bold text-md uppercase text-gray-700 mt-3">
-              Jhon Doe
+              Know Your Customer
             </h3>
             <div className="h-1 w-12 bg-secondary my-3 mb-4 mx-auto"></div>
             <p className="text-gray-500 text-sm my-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit et,
-              cum quis magni saepe sint!
+              Perform global KYC checks quickly and cost-effectively
             </p>
             <button
               type="button"
@@ -44,23 +45,22 @@ const HomeCards = () => {
         </div>
 
         <div className="max-w-[20rem] border hover:border-b-secondary rounded-lg animation-fade shadow-lg">
-          <div className="max-w-30">
+          <div className="max-w-48 mx-auto">
             <img
               loading="lazy"
               decoding="async"
               className="w-full pt-5"
-              src={cardImage}
+              src={cardImageTwo}
               alt="Card Image 1"
             />
           </div>
           <div className="text-center px-4">
             <h3 className="my-2  font-bold text-md uppercase text-gray-700 mt-3">
-              Jhon Doe
+              Identity Verification
             </h3>
             <div className="h-1 w-12 bg-secondary my-3 mb-4 mx-auto"></div>
             <p className="text-gray-500 text-sm my-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit et,
-              cum quis magni saepe sint!
+              Verify your customers true identity in under 30 seconds
             </p>
             <button
               type="button"
@@ -72,23 +72,22 @@ const HomeCards = () => {
         </div>
 
         <div className="max-w-[20rem] border hover:border-b-secondary rounded-lg animation-fade shadow-lg">
-          <div className="max-w-30">
+          <div className="max-w-48 mx-auto">
             <img
               loading="lazy"
               decoding="async"
               className="w-full pt-5"
-              src={cardImage}
+              src={cardImageThree}
               alt="Card Image 1"
             />
           </div>
           <div className="text-center px-4">
             <h3 className="my-2  font-bold text-md uppercase text-gray-700 mt-3">
-              Jhon Doe
+              Anti-Money Laundering
             </h3>
             <div className="h-1 w-12 bg-secondary my-3 mb-4 mx-auto"></div>
             <p className="text-gray-500 text-sm my-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit et,
-              cum quis magni saepe sint!
+              Prevent money laundering, terrorist financing, and fraud
             </p>
             <button
               type="button"

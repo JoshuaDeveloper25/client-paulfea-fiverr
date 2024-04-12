@@ -1,6 +1,6 @@
 import { FaPlus } from "react-icons/fa";
 
-const EditModalNews = ({ titleModal, children, showModal, setShowModal }) => {
+const EditModalNews = ({ titleModal, children, showModal, setShowModal, onClose }) => {
   const mostrarModal = () => {
     onClick();
     setShowModal(!showModal);

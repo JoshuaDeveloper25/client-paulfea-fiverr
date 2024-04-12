@@ -1,15 +1,16 @@
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import ModalComponent from '../../../components/ModalComponent';
-import { getError } from '../../../utils/getError';
-import { toast } from 'react-toastify';
-import { useState } from 'react';
-import axios from 'axios';
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import ModalComponent from "../../../components/ModalComponent";
+import { getError } from "../../../utils/getError";
+import { toast } from "react-toastify";
+import { useState } from "react";
+import axios from "axios";
 
 const Header = ({
   addTextInfo,
   handleChangeInfo,
   deleteTextInfo,
   textInfo,
+  setTextInfo,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -17,10 +18,10 @@ const Header = ({
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data) =>
-      await axios.post('/news/create-news', data).then((res) => res.data),
+      await axios.post("/news/create-news", data).then((res) => res.data),
 
     onSuccess: (data) => {
-      queryClient.invalidateQueries(['news']);
+      queryClient.invalidateQueries(["news"]);
       toast.success(`Sucessfully registered!`);
       setShowModal(!showModal);
       console.log(data);
@@ -36,9 +37,9 @@ const Header = ({
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    console.log(textInfo)
+    console.log(textInfo);
     // return
-    formData.append('textInfo', JSON.stringify(textInfo))
+    formData.append("textInfo", JSON.stringify(textInfo));
 
     mutate(formData);
   };
@@ -48,9 +49,10 @@ const Header = ({
       <ModalComponent
         setShowModal={setShowModal}
         showModal={showModal}
-        textBtn={'Create New'}
-        titleModal={'Create New'}
+        textBtn={"Create New"}
+        titleModal={"Create New"}
         // SecondaryBtn={() => <ImportUsers setRefreshRender={setRefreshRender} />}
+        onClose={() => setTextInfo([])}
       >
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-3">
@@ -104,14 +106,14 @@ const Header = ({
                     className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border mb-2"
                     name={`subheader-${idx}`}
                     onChange={handleChangeInfo}
-                    value={item?.subheader || ''}
+                    value={item?.subheader || ""}
                     placeholder="Sub-header"
                   />
                   <input
                     className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
                     name={`paragraph-${idx}`}
                     onChange={handleChangeInfo}
-                    value={item?.paragraph || ''}
+                    value={item?.paragraph || ""}
                     placeholder="Paragraph"
                   />
                 </div>

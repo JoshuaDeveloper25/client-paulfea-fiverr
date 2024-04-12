@@ -36,9 +36,9 @@ const Header = () => {
                 className="HAMBURGER-ICON space-y-2 cursor-pointer"
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-secondary"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-secondary"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-secondary"></span>
               </div>
 
               <div
@@ -53,7 +53,7 @@ const Header = () => {
                   onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
                 >
                   <svg
-                    className="h-8 w-8 text-gray-600 cursor-pointer"
+                    className="h-8 w-8 text-secondary cursor-pointer"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -213,7 +213,6 @@ const DropDown = () => {
           <>
             <Link
               to="/admin"
-              target="_blank"
               className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 hover:text-secondary/90 cursor-pointer rounded-md"
             >
               Admin

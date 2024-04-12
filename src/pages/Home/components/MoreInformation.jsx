@@ -1,4 +1,4 @@
-import getInTouch from "../../../images/get-in-touch.jpg";
+import moreInformation from "../../../images/moreInformation.png";
 
 const MoreInformation = () => {
   return (
@@ -10,7 +10,7 @@ const MoreInformation = () => {
               className="rounded w-full hover:opacity-85 animation-fade"
               loading="lazy"
               decoding="async"
-              src={getInTouch}
+              src={moreInformation}
               alt="Get In Touch Image"
             />
           </div>
@@ -19,22 +19,16 @@ const MoreInformation = () => {
         <div className="flex-1">
           <h3 className="text-3xl mb-3 border-b-2 border-secondary pb-3">
             <span className="font-bold text-secondary animate-pulse">
-              Lorem ipsum dolor sit amet.
+              Enhance Compliance with<span className="block">Seamless KYC Checks</span>
             </span>
           </h3>
 
-          <p className="text-gray-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-            asperiores est unde delectus cupiditate temporibus laboriosam
-            provident culpa nam corrupti aperiam, iure numquam fugiat aliquam
-            error, doloribus perspiciatis accusantium architecto!
-          </p>
-
-          <p className="text-gray-500 mt-3">
-            Asinc adipisicing elit. Maiores asperiores est unde delectus
-            cupiditate temporibus laboriosam provident culpa nam corrupti
-            aperiam, iure numquam fugiat aliquam error, doloribus perspiciatis
-            accusantium architecto!
+          <p className="text-gray-500 leading-7">
+            Elevate your compliance standards effortlessly with our streamlined
+            KYC checks. Leveraging our established setup, we ensure thorough
+            verification processes for individuals, guaranteeing adherence to
+            regulatory requirements with ease. Trust in our solution to uphold
+            compliance while maintaining operational efficiency.
           </p>
         </div>
       </article>

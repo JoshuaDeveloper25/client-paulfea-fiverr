@@ -26,6 +26,7 @@ import News from "./pages/News/News";
 import ManageUsers from "./admin/ManageUsers";
 import ManageNews from "./admin/ManageNews";
 import RootAdmin from "./admin/RootAdmin";
+import HomeAdmin from "./admin/HomeAdmin/HomeAdmin"
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -78,7 +79,7 @@ const router = createBrowserRouter([
         path: "/news",
         element: <News />,
       },
-    ],    
+    ],
   },
 
   // --> Admin Panel
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
     path: "/admin/",
     element: <RootAdmin />,
     children: [
+      {
+        element: <HomeAdmin />,
+        index: true,
+      },
       {
         path: "manage-users",
         element: <ManageUsers />,

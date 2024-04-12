@@ -9,11 +9,14 @@ const ModalComponent = ({
   SecondaryBtn = null,
   showModal,
   setShowModal,
+  onClose = () => {},
 }) => {
-
   const mostrarModal = () => {
     onClick();
-    setShowModal(!showModal);
+    {
+      setShowModal(!showModal);
+      onClose();
+    }
   };
 
   return (
@@ -43,7 +46,10 @@ const ModalComponent = ({
           >
             <div
               className="h-[100vh] fixed top-0 w-full bg-black/40"
-              onClick={() => setShowModal(!showModal)}
+              onClick={() => {
+                setShowModal(!showModal);
+                onClose();
+              }}
             ></div>
             <div className="relative p-4 w-full mx-auto mt-20 max-w-xl max-h-full z-40">
               {/* <!-- Modal content --> */}
@@ -58,7 +64,10 @@ const ModalComponent = ({
                     type="button"
                     className="text-black bg-transparent hover:bg-gray-200 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-black dark:hover:text-white"
                     data-modal-hide="default-modal"
-                    onClick={() => setShowModal(!showModal)}
+                    onClick={() => {
+                      setShowModal(!showModal);
+                      onClose();
+                    }}
                   >
                     <svg
                       className="w-3 h-3"

@@ -6,9 +6,9 @@ const ReadyGetStarted = () => {
   return (
     <section className="mx-3">
       <div className="container-page px-3 py-7 rounded my-5 border bg-secondary text-white">
-        <h2 className="text-center text-3xl mb-4 font-bold">
+        <h2 className="animate-pulse text-center text-3xl mb-4 font-bold">
           Ready to get{" "}
-          <span className="animate-pulse text-white">started?</span>
+          <span className=" text-white">started?</span>
         </h2>
 
         <div className="flex justify-center gap-4 mt-7">

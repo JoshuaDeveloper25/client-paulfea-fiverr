@@ -13,11 +13,12 @@ const Carousel = ({
   paragraphFive,
   titleSix,
   paragraphSix,
-  titleSeven,
-  paragraphSeven,
-  titleEight,
-  paragraphEight,
-  image,
+  feature1,
+  feature2,
+  feature3,
+  feature4,
+  feature5,
+  feature6,
 }) => {
   const settings = {
     dots: false,
@@ -61,51 +62,39 @@ const Carousel = ({
   return (
     <Slider {...settings}>
       <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleOne}</h3>
-        <p className="text-sm text-gray-500">{paragraphOne}</p>
+        <img src={feature1} className="w-24 rounded-full mx-auto mb-1" />
+        <h3 className="text-gray-600 my-2 font-bold text-lg">{titleOne}</h3>
+        <p className="text-[.8rem] text-gray-500">{paragraphOne}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleTwo}</h3>
-        <p className="text-sm text-gray-500">{paragraphTwo}</p>
+        <img src={feature2} className="w-24 rounded-full mx-auto mb-1" />
+        <h3 className="text-gray-600 my-2 font-bold text-lg">{titleTwo}</h3>
+        <p className="text-[.8rem] text-gray-500">{paragraphTwo}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleThree}</h3>
-        <p className="text-sm text-gray-500">{paragraphThree}</p>
+        <img src={feature3} className="w-24 rounded-full mx-auto mb-1" />
+        <h3 className="text-gray-600 my-2 font-bold text-lg">{titleThree}</h3>
+        <p className="text-[.8rem] text-gray-500">{paragraphThree}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleFour}</h3>
-        <p className="text-sm text-gray-500">{paragraphFour}</p>
+        <img src={feature4} className="w-24 rounded-full mx-auto mb-1" />
+        <h3 className="text-gray-600 my-2 font-bold text-lg">{titleFour}</h3>
+        <p className="text-[.8rem] text-gray-500">{paragraphFour}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleFive}</h3>
-        <p className="text-sm text-gray-500">{paragraphFive}</p>
+        <img src={feature5} className="w-24 rounded-full mx-auto mb-1" />
+        <h3 className="text-gray-600 my-2 font-bold text-lg">{titleFive}</h3>
+        <p className="text-[.8rem] text-gray-500">{paragraphFive}</p>
       </div>
 
       <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleSix}</h3>
-        <p className="text-sm text-gray-500">{paragraphSix}</p>
-      </div>
-
-      <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleSeven}</h3>
-        <p className="text-sm text-gray-500">{paragraphSeven}</p>
-      </div>
-
-      <div className="text-center">
-        <img src={image} className="w-36 mx-auto mb-1" />
-        <h3 className="text-gray-600 font-bold text-lg">{titleEight}</h3>
-        <p className="text-sm text-gray-500">{paragraphEight}</p>
+        <img src={feature6} className="w-24 rounded-full mx-auto mb-1" />
+        <h3 className="text-gray-600 my-2 font-bold text-lg">{titleSix}</h3>
+        <p className="text-[.8rem] text-gray-500">{paragraphSix}</p>
       </div>
     </Slider>
   );
