@@ -20,6 +20,7 @@ const News = () => {
   });
 
   if (isLoading) return <p>Loading...</p>;
+  console.log(data);
 
   return (
     <section className="container-page px-3 my-16">
@@ -32,43 +33,48 @@ const News = () => {
       </p>
 
       <div className="flex flex-wrap justify-center row-gap-3 gap-7">
-        {data?.map((info, id) => {
-          return (
-            <div key={id} className="max-w-[23rem] shadow-lg rounded-sm">
-              <img src={info?.image[0]?.cloudinary_url} className="rounded-sm object-contain h-44 w-full" />
-              <div className="px-4 py-6">
-                <h3 className="text-md font-bold text-secondary text-[1rem] leading-5">
-                  {info?.title}
-                </h3>
+        {data?.length > 0 &&
+          data?.map((info, id) => {
+            console.log(info);
+            return (
+              <div key={id} className="max-w-[23rem] shadow-lg rounded-sm">
+                <img
+                  src={info?.image[0]?.cloudinary_url}
+                  className="rounded-sm object-contain h-44 w-full"
+                />
+                <div className="px-4 py-6">
+                  <h3 className="text-md font-bold text-secondary text-[1rem] leading-5">
+                    {info?.title}
+                  </h3>
 
-                <div className="flex gap-3 my-2">
-                  <div className="flex items-center gap-2">
-                    <AiOutlineBars className="text-xs text-gray-800" />
-                    <h3 className="text-gray-400 text-xs">
-                      Category:{" "}
-                      <span className="text-black">{info?.category}</span>
-                    </h3>
+                  <div className="flex gap-3 my-2">
+                    <div className="flex items-center gap-2">
+                      <AiOutlineBars className="text-xs text-gray-800" />
+                      <h3 className="text-gray-400 text-xs">
+                        Category:{" "}
+                        <span className="text-black">{info?.category}</span>
+                      </h3>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <FaCalendarAlt className="text-xs text-gray-800" />
+                      <h3 className="text-gray-400 text-xs">
+                        {formatDate(info?.createdAt)}
+                      </h3>
+                    </div>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    <FaCalendarAlt className="text-xs text-gray-800" />
-                    <h3 className="text-gray-400 text-xs">
-                      {formatDate(info?.createdAt)}
-                    </h3>
-                  </div>
+                  <p className="text-gray-500 text-[.8rem]">
+                    {info?.textInfo[0]?.subheader}
+                  </p>
+
+                  <p className="text-gray-500 text-[.8rem]">
+                    {info?.textInfo[0]?.paragraph}
+                  </p>
                 </div>
-                
-                <p className="text-gray-500 text-[.8rem]">
-                  {info?.textInfo[0]?.subheader}
-                </p>
-
-                <p className="text-gray-500 text-[.8rem]">
-                  {info?.textInfo[0]?.paragraph}
-                </p>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
 
       <div className="text-center mt-6">

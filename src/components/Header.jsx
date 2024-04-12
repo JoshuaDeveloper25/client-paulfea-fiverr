@@ -18,7 +18,7 @@ const Header = () => {
       <header className="container-page w-full px-3 py-3">
         <div className="flex items-center justify-between">
           <div>
-            <Link>
+            <Link to={`/`}>
               <img
                 loading="lazy"
                 decoding="async"
