@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
+import { optionsCategories } from "../../utils/adminRoutes";
 
 const ManageNews = () => {
   const [infoRow, setInfoRow] = useState(null);
@@ -191,14 +192,24 @@ const ManageNews = () => {
             </div>
 
             <div className="flex-1">
-              <input
-                type="category"
+              <select
                 className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border"
-                placeholder="Category"
-                name="category"
                 defaultValue={infoRow?.category}
+                name="category"
                 required
-              />
+              >
+                <option value={""}>Select Category:</option>
+                {optionsCategories?.map((optionCategory, id) => {
+                  return (
+                    <option
+                      value={optionCategory.value}
+                      key={id}
+                    >
+                      {optionCategory.text}
+                    </option>
+                  );
+                })}
+              </select>
             </div>
 
             <div className="flex-1">
@@ -256,7 +267,10 @@ const ManageNews = () => {
               Add Aditional Text
             </button>
 
-            <button className="button-primary" disabled={fileMutation.isPending || isPending}>
+            <button
+              className="button-primary"
+              disabled={fileMutation.isPending || isPending}
+            >
               Edit
             </button>
           </div>

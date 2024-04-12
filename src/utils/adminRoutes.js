@@ -9,3 +9,20 @@ export const links = [
     to: `manage-news`,
   },
 ];
+
+export const optionsCategories = [
+  {
+    text: "News",
+    value: "news",
+  },
+
+  {
+    text: "Product",
+    value: "product",
+  },
+
+  {
+    text: "Guides",
+    value: "guides",
+  },
+];

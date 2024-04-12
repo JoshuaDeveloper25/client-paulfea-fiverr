@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Dropdown = ({ options }) => {
@@ -10,6 +11,15 @@ const Dropdown = ({ options }) => {
 
   return (
     <div className="relative group">
+      {isOpen &&
+        createPortal(
+          <div
+            onClick={() => setIsOpen(false)}
+            className="fixed top-0 left-0 w-full h-full"
+          ></div>,
+          document.body
+        )}
+
       <button
         onClick={handleToggle}
         id="dropdown-button"
