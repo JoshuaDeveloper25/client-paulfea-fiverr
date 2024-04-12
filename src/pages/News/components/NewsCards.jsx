@@ -20,14 +20,14 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           <button
             onClick={() => handleQuery("viewAll", true)}
             type="button"
-            className={query?.viewAll ? "underline" : null} 
+            className={query?.viewAll ? "border-b-2 border-secondary text-secondary font-bold " : null} 
           >
             View All
           </button>
 
           <button
             className={
-              query?.category?.toLowerCase() === "news" ? "underline" : null
+              query?.category?.toLowerCase() === "news" ? "border-b-2 border-secondary text-secondary font-bold " : null
             }
             onClick={() => handleQuery("category", "news")}
             type="button"
@@ -39,7 +39,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             onClick={() => handleQuery("category", "product")}
             type="button"
             className={
-              query?.category?.toLowerCase() === "product" ? "underline" : null
+              query?.category?.toLowerCase() === "product" ? "border-b-2 border-secondary text-secondary font-bold " : null
             }
           >
             Product
@@ -49,7 +49,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             onClick={() => handleQuery("category", "guides")}
             type="button"
             className={
-              query?.category?.toLowerCase() === "guides" ? "underline" : null
+              query?.category?.toLowerCase() === "guides" ? "border-b-2 border-secondary text-secondary font-bold " : null
             }
           >
             Guides
