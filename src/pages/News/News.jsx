@@ -56,7 +56,7 @@ const News = () => {
   useEffect(() => {
     const searching = setTimeout(() => {
       refetch();
-    }, 1000);
+    }, 500);
 
     return () => {
       clearTimeout(searching);

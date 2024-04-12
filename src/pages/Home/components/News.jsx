@@ -20,8 +20,7 @@ const News = () => {
   });
 
   if (isLoading) return <p>Loading...</p>;
-  console.log(data);
-
+  
   return (
     <section className="container-page px-3 my-16">
       <h3 className="text-center text-4xl">
@@ -35,7 +34,6 @@ const News = () => {
       <div className="flex flex-wrap justify-center row-gap-3 gap-7">
         {data?.length > 0 &&
           data?.map((info, id) => {
-            console.log(info);
             return (
               <div key={id} className="max-w-[23rem] shadow-lg rounded-sm">
                 <img

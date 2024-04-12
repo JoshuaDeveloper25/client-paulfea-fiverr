@@ -9,6 +9,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
           Ne<span className="font-bold text-secondary animate-pulse">ws</span>
         </h2>
+
         <p className="text-gray-500 mt-3">
           Lastest news, tips and best practices.
         </p>
@@ -19,10 +20,11 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           <button
             onClick={() => handleQuery("viewAll", true)}
             type="button"
-            className={query?.viewAll ? "underline" : null}
+            className={query?.viewAll ? "underline" : null} 
           >
             View All
           </button>
+
           <button
             className={
               query?.category?.toLowerCase() === "news" ? "underline" : null
@@ -32,6 +34,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           >
             News
           </button>
+
           <button
             onClick={() => handleQuery("category", "product")}
             type="button"
@@ -41,6 +44,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           >
             Product
           </button>
+
           <button
             onClick={() => handleQuery("category", "guides")}
             type="button"
@@ -100,6 +104,60 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           );
         })}
       </div>
+
+      {isFetching && (
+        <>
+          <article className="grid md:grid-cols-3 min-[450px]:grid-cols-2 row-gap-3 gap-7">
+            <div class="mt-5 shadow-lg rounded-md p-4 max-w-sm w-full mx-auto">
+              <div class="animate-pulse">
+                <div class="bg-gray-300 h-44 w-full"></div>
+                <div class="flex-1 space-y-3 py-1">
+                  <div class="h-2 w-20 bg-gray-300"></div>
+                  <div class="space-y-2">
+                    <div class="flex gap-4">
+                      <div class="h-2 w-20 bg-gray-300 col-span-2"></div>
+                      <div class="h-2 w-28 bg-gray-300 col-span-1"></div>
+                    </div>
+                    <div class="h-10 bg-gray-300"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 shadow-lg rounded-md p-4 max-w-sm w-full mx-auto">
+              <div class="animate-pulse">
+                <div class="bg-gray-300 h-44 w-full"></div>
+                <div class="flex-1 space-y-3 py-1">
+                  <div class="h-2 w-20 bg-gray-300"></div>
+                  <div class="space-y-2">
+                    <div class="flex gap-4">
+                      <div class="h-2 w-20 bg-gray-300 col-span-2"></div>
+                      <div class="h-2 w-28 bg-gray-300 col-span-1"></div>
+                    </div>
+                    <div class="h-10 bg-gray-300"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 shadow-lg rounded-md p-4 max-w-sm w-full mx-auto">
+              <div class="animate-pulse">
+                <div class="bg-gray-300 h-44 w-full"></div>
+                <div class="flex-1 space-y-3 py-1">
+                  <div class="h-2 w-20 bg-gray-300"></div>
+                  <div class="space-y-2">
+                    <div class="flex gap-4">
+                      <div class="h-2 w-20 bg-gray-300 col-span-2"></div>
+                      <div class="h-2 w-28 bg-gray-300 col-span-1"></div>
+                    </div>
+                    <div class="h-10 bg-gray-300"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </>
+      )}
 
       {data?.hasNextPage && (
         <div className="text-center mt-10">
