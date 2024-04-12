@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate, Navigate } from "react-router-dom";
 import { UserContext } from "../context/UserProvider";
 import { useContext, useState } from "react";
 import { links } from "../utils/adminRoutes";
@@ -6,13 +6,17 @@ import { FaArrowLeft } from "react-icons/fa";
 import logo from "../images/logo.png";
 
 const RootAdmin = () => {
-  const { dispatch } = useContext(UserContext);
+  const { state, dispatch } = useContext(UserContext);
   const navigate = useNavigate();
 
   const signOut = () => {
     dispatch({ type: "LOG_OUT" });
     navigate(`/`);
   };
+
+  if (state.userInfo.role !== "admin") {
+    return <Navigate to="/" />;
+  }
 
   return (
     <div className="flex min-h-svh">
