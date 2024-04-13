@@ -94,7 +94,7 @@ export const Table = ({ columns = [], data = [] }) => {
             <div className="flex items-center gap-2">
               {table.getCanPreviousPage() && (
                 <button
-                  className="btn inline-flex px-3 gap-3"
+                  className="rounded shadow-lg btn inline-flex px-3 gap-3"
                   onClick={() => table.previousPage()}
                 >
                   Prev Page
@@ -103,7 +103,7 @@ export const Table = ({ columns = [], data = [] }) => {
 
               {table.getCanNextPage() && (
                 <button
-                  className="btn inline-flex px-3 gap-3"
+                  className="rounded shadow-lg btn inline-flex px-3 gap-3"
                   onClick={() => table.nextPage()}
                 >
                   Next Page

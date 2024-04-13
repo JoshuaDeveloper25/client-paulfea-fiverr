@@ -105,7 +105,7 @@ const Header = ({
                   <h3>Text {idx + 1}</h3>
                   <button
                     type="button"
-                    className="text-red-400 hover:scale-105 transition-all"
+                    className="text-red-400 hover:scale-105 transition-all rounded shadow-lg"
                     onClick={() => deleteTextInfo(idx)}
                   >
                     Delete
@@ -132,7 +132,7 @@ const Header = ({
             ))}
 
             <button
-              className="bg-blue-300 text-white py-1"
+              className="bg-blue-300 text-white py-1 rounded shadow-lg"
               onClick={addTextInfo}
               type="button"
             >

@@ -38,7 +38,7 @@ const Dropdown = ({ options }) => {
             <button
               key={id}
               onClick={option?.action}
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
+              className="block px-4 py-2 text-gray-700 shadow-lg hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
             >
               {option?.text}
             </button>

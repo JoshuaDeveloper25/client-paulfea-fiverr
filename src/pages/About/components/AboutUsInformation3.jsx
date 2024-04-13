@@ -3,7 +3,7 @@ import about3 from "../../../images/about3.png";
 const AboutUsInformationThree = () => {
   return (
     <section className="container-page px-3 mb-16">
-      <div className="text-center my-20">
+      <div className="text-center md:my-16 my-10">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
           Complycube's powerful{"  "}
           <span className="font-bold text-secondary animate-pulse">
@@ -15,7 +15,7 @@ const AboutUsInformationThree = () => {
         </p>
       </div>
 
-      <article className="flex md:flex-row flex-col-reverse gap-6 py-5">
+      <article className="flex md:flex-row flex-col-reverse gap-6 md:py-5 py-2">
         <div className="flex-1 md:px-8 px-2">
           <h3 className="text-gray-900 font-bold">
             Unrivaled AML/KYC Capabilities:

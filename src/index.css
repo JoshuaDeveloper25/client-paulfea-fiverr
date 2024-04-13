@@ -12,7 +12,7 @@
   }
 
   .button-primary {
-    @apply text-center w-full text-black border-secondary transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary disabled:opacity-40;
+    @apply text-center w-full text-black border-secondary shadow-lg transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary disabled:opacity-40;
   }
 }
 

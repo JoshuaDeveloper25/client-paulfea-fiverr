@@ -62,7 +62,7 @@ const ModalComponent = ({
 
                   <button
                     type="button"
-                    className="text-black bg-transparent hover:bg-gray-200 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-black dark:hover:text-white"
+                    className="text-black bg-transparent shadow-lg hover:bg-gray-200 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-black dark:hover:text-white"
                     data-modal-hide="default-modal"
                     onClick={() => {
                       setShowModal(!showModal);

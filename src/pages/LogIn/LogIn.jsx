@@ -43,7 +43,7 @@ const LogIn = () => {
       <LogInForm>
         <button
           disabled={isPending}
-          className="text-center w-full text-black border-secondary transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary disabled:opacity-40"
+          className="text-center shadow-lg w-full text-black border-secondary transition-all duration-150 border py-1 rounded hover:text-white hover:bg-secondary disabled:opacity-40"
         >
           Log In
         </button>

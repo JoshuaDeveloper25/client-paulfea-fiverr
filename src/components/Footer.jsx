@@ -1,3 +1,7 @@
+import { FaFacebookSquare } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { BsTwitterX } from "react-icons/bs";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -6,6 +10,18 @@ const Footer = () => {
       <div className="container-page flex flex-col sm:flex-row sm:items-start items-center justify-between">
         {/* NewsLetter */}
         <div>
+          <div className="flex gap-3 items-center mb-2">
+            <a href="#">
+              <CiLinkedin className="text-lg" />
+            </a>
+            <a href="#">
+              <FaFacebookSquare className="text-lg" />
+            </a>
+            <a href="#">
+              <BsTwitterX className="text-lg" />
+            </a>
+          </div>
+
           <div className="sm:mb-0 mb-3">
             <label className="font-bold" htmlFor="newsletter">
               Newsletter:

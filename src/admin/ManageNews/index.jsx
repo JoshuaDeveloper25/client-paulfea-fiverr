@@ -232,7 +232,7 @@ const ManageNews = () => {
                   <h3>Text {idx + 1}</h3>
                   <button
                     type="button"
-                    className="text-red-400 hover:scale-105 transition-all"
+                    className="text-red-400 hover:scale-105 transition-all shadow-lg rounded-md"
                     onClick={() => deleteTextInfo(idx)}
                   >
                     Delete
@@ -259,7 +259,7 @@ const ManageNews = () => {
             ))}
 
             <button
-              className="bg-blue-300 text-white py-1"
+              className="bg-blue-300 text-white py-1 shadow-lg rounded"
               onClick={addTextInfo}
               type="button"
               disabled={isLoading}
@@ -268,7 +268,7 @@ const ManageNews = () => {
             </button>
 
             <button
-              className="button-primary"
+              className="button-primary shadow-lg rounded"
               disabled={fileMutation.isPending || isPending}
             >
               Edit

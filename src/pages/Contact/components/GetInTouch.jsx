@@ -72,7 +72,7 @@ const GetInTouch = () => {
           </div>
 
           <button
-            className="bg-secondary md:w-auto w-full rounded animation-fade hover:bg-tertiary text-white px-4 py-1 mt-5"
+            className="bg-secondary md:w-auto shadow-lg w-full rounded animation-fade hover:bg-tertiary text-white px-4 py-1 mt-5"
             type="submit"
           >
             Send

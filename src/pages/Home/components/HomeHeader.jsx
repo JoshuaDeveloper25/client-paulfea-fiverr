@@ -26,7 +26,7 @@ const HomeHeader = () => {
           <div className="flex justify-center items-center gap-4">
             <div>
               <button
-                className="animation-fade text-white bg-secondary hover:bg-secondary/80 font-bold px-4 py-1 rounded"
+                className="animation-fade shadow-lg text-white bg-secondary hover:bg-secondary/80 font-bold px-4 py-1 rounded"
                 type="button"
               >
                 Start Now
@@ -35,7 +35,7 @@ const HomeHeader = () => {
 
             <div>
               <button
-                className="hover:border-secondary hover:text-secondary animation-fade border border-white text-white px-3 py-1 rounded"
+                className="hover:border-secondary shadow-lg hover:text-secondary animation-fade border border-white text-white px-3 py-1 rounded"
                 type="button"
                 onClick={() => navigate(`/contact`)}
               >

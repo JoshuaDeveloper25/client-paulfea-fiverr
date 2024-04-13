@@ -37,7 +37,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
-              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
+              className="bg-secondary shadow-lg  text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
             </button>
@@ -64,7 +64,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
-              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
+              className="bg-secondary shadow-lg text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
             </button>
@@ -91,7 +91,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
-              className="bg-secondary text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
+              className="bg-secondary shadow-lg text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
             </button>

@@ -25,7 +25,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             type="button"
             className={
               query?.viewAll
-                ? "border-b-2 border-secondary text-secondary font-bold "
+                ? "border-b-2 border-secondary text-secondary font-bold shadow-lg "
                 : null
             }
           >
@@ -35,7 +35,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           <button
             className={
               query?.category?.toLowerCase() === "news"
-                ? "border-b-2 border-secondary text-secondary font-bold "
+                ? "border-b-2 border-secondary text-secondary font-bold shadow-lg "
                 : null
             }
             onClick={() => handleQuery("category", "news")}
@@ -49,7 +49,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             type="button"
             className={
               query?.category?.toLowerCase() === "product"
-                ? "border-b-2 border-secondary text-secondary font-bold "
+                ? "border-b-2 border-secondary text-secondary font-bold shadow-lg "
                 : null
             }
           >
@@ -61,7 +61,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             type="button"
             className={
               query?.category?.toLowerCase() === "guides"
-                ? "border-b-2 border-secondary text-secondary font-bold "
+                ? "border-b-2 border-secondary text-secondary font-bold shadow-lg "
                 : null
             }
           >

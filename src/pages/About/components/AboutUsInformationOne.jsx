@@ -3,14 +3,14 @@ import about from "../../../images/about.png";
 const AboutUsInformationOne = () => {
   return (
     <section className="container-page px-3">
-      <div className="text-center my-20">
+      <div className="text-center lg:my-16 my-4">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
           Who are{" "}
           <span className="font-bold text-secondary animate-pulse">We?</span>
         </h2>
       </div>
 
-      <article className="flex md:flex-row flex-col-reverse gap-16 py-5">
+      <article className="flex md:flex-row flex-col-reverse md:gap-16 gap-6 md:py-5 py-2">
         <div className="flex-1">
           <p className="text-gray-700 mb-3">
             Hobzz seamlessly integrates with ComplyCube, an all-in-one

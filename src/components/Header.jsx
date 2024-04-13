@@ -101,7 +101,7 @@ const Header = () => {
                       <button
                         onClick={signUp}
                         type="button"
-                        className="bg-secondary text-white hover:bg-secondary/50 hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
+                        className="bg-secondary shadow-lg text-white hover:bg-secondary/50 hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
                       >
                         Sign Up
                       </button>
@@ -156,7 +156,7 @@ const Header = () => {
                     <button
                       onClick={signUp}
                       type="button"
-                      className="bg-secondary text-white hover:bg-secondary/50 hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
+                      className="bg-secondary shadow-lg text-white hover:bg-secondary/50 hover:text-white hover:bg-secondary hover:border-secondary transition-all duration-300 rounded px-3 py-1"
                     >
                       Sign Up
                     </button>

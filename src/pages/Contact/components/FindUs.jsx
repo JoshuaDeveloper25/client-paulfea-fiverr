@@ -3,9 +3,8 @@ const FindUs = () => {
     <section className="container-page px-3 my-20 mb-24">
       <article className="flex md:flex-row-reverse flex-col-reverse gap-8 py-5">
         <div className="flex-1">
-          <h3 className="text-center text-3xl mb-3">
-            Find{" "}
-            <span className="text-secondary font-bold animate-pulse">us!</span>
+          <h3 className="text-center text-3xl mb-3 animate-pulse font-bold">
+            Find Us
           </h3>
 
           <p className="mb-3 text-justify text-gray-700 leading-5">

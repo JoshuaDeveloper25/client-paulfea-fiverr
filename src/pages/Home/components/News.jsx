@@ -80,7 +80,7 @@ const News = () => {
         <button
           onClick={() => navigate(`/news`)}
           type="button"
-          className="border bg-secondary text-white px-4 hover:bg-secondary/80 hover:text-white animation-fade my-3 rounded py-1"
+          className="shadow-lg border bg-secondary text-white px-4 hover:bg-secondary/80 hover:text-white animation-fade my-3 rounded py-1"
         >
           Find More
         </button>

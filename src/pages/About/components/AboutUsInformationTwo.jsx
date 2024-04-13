@@ -3,7 +3,7 @@ import about2 from "../../../images/about2.png";
 const AboutUsInformationTwo = () => {
   return (
     <section className="container-page px-3 mt-12">
-      <article className="flex flex-col md:flex-row gap-16 py-5">
+      <article className="flex flex-col md:flex-row md:gap-16 gap-6 md:py-5 py-2">
         <div className="flex-1">
           <img
             loading="lazy"

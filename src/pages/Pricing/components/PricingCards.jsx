@@ -57,7 +57,7 @@ const PricingCards = () => {
                   {pricingCard?.pricingSmallText}
                 </h4>
                 <button
-                  className="text-white bg-secondary px-2 py-1 rounded hover:scale-105 animation-fade mt-4"
+                  className="text-white bg-secondary px-2 py-1 shadow-lg rounded hover:scale-105 animation-fade mt-4"
                   type="button"
                 >
                   {pricingCard?.pricingButton}
