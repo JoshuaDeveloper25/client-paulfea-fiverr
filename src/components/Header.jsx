@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo.png";
 import { useContext, useState } from "react";
 import { UserContext } from "../context";
@@ -66,36 +66,36 @@ const Header = () => {
                   </svg>
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center gap-6 justify-between min-h-[250px]">
-                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} to="/solutions">
+                  <li className=" hover:border-b-secondary text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <NavLink className={({ isActive } ) => (isActive ? 'border-b border-secondary' : '')} onClick={() => setIsNavOpen(false)} to="/solutions">
                       Solutions
-                    </Link>
+                    </NavLink>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} to="/about">
+                  <li className=" hover:border-b-secondary text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <NavLink className={({ isActive } ) => (isActive ? 'border-b border-secondary' : '')} onClick={() => setIsNavOpen(false)} to="/about">
                       About
-                    </Link>
+                    </NavLink>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} to="/pricing">
+                  <li className=" hover:border-b-secondary text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <NavLink className={({ isActive } ) => (isActive ? 'border-b border-secondary' : '')} onClick={() => setIsNavOpen(false)} to="/pricing">
                       Pricing
-                    </Link>
+                    </NavLink>
                   </li>
 
-                  <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                    <Link onClick={() => setIsNavOpen(false)} to="/contact">
+                  <li className=" hover:border-b-secondary text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                    <NavLink className={({ isActive } ) => (isActive ? 'border-b border-secondary' : '')} onClick={() => setIsNavOpen(false)} to="/contact">
                       Contact
-                    </Link>
+                    </NavLink>
                   </li>
 
                   {!state?.userInfo.token && (
                     <>
-                      <li className="border-b border-gray-400 hover:shadow-lg text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
-                        <Link onClick={() => setIsNavOpen(false)} to="/login">
+                      <li className=" hover:border-b-secondary text-secondary hover:border-secondary transition-all duration-150 hover:scale-110 uppercase">
+                        <NavLink className={({ isActive } ) => (isActive ? 'border-b border-secondary' : '')} onClick={() => setIsNavOpen(false)} to="/login">
                           Log In
-                        </Link>
+                        </NavLink>
                       </li>
 
                       <button
@@ -115,42 +115,42 @@ const Header = () => {
 
             {/* DESKTOP-MENU */}
             <ul className="hidden space-x-8 lg:flex items-center">
-              <Link
-                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
+              <NavLink
                 to={`/solutions`}
+                className={({ isActive }) => (isActive ? 'text-secondary border-b border-b-secondary' : 'text-secondary hover:border-b hover:border-b-secondary hover:shadow-secondary-green animation-fade')}
               >
                 Solutions
-              </Link>
+              </NavLink>
 
-              <Link
-                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
+              <NavLink
                 to={`/about`}
+                className={({ isActive }) => (isActive ? 'text-secondary border-b border-b-secondary' : 'text-secondary hover:border-b hover:border-b-secondary hover:shadow-secondary-green animation-fade')}
               >
                 About
-              </Link>
+              </NavLink>
 
-              <Link
-                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
+              <NavLink
                 to={`/pricing`}
+                className={({ isActive }) => (isActive ? 'text-secondary border-b border-b-secondary' : 'text-secondary hover:border-b hover:border-b-secondary hover:shadow-secondary-green animation-fade')}
               >
                 Pricing
-              </Link>
+              </NavLink>
 
-              <Link
-                className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
+              <NavLink
                 to={`/contact`}
+                className={({ isActive }) => (isActive ? 'text-secondary border-b border-b-secondary' : 'text-secondary hover:border-b hover:border-b-secondary hover:shadow-secondary-green animation-fade')}
               >
                 Contact
-              </Link>
+              </NavLink>
 
               {!state?.userInfo.token && (
                 <>
-                  <Link
-                    className="text-secondary hover:shadow-lg hover:shadow-secondary-green animation-fade"
+                  <NavLink
                     to={`/login`}
+                    className={({ isActive }) => (isActive ? 'text-secondary border-b border-b-secondary' :'text-secondary hover:border-b hover:border-b-secondary hover:shadow-secondary-green animation-fade')}
                   >
                     Log in
-                  </Link>
+                  </NavLink>
 
                   <div>
                     <button

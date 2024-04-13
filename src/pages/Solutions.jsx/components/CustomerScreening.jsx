@@ -1,80 +1,91 @@
-import { RiCustomerService2Line } from "react-icons/ri";
+import a1 from "../../../images/1a.png";
+import b1 from "../../../images/1b.png";
+import c1 from "../../../images/1c.png";
+
+import a2 from "../../../images/2a.png";
 
 const CustomerScreening = () => {
   return (
     <section className="container-page px-3">
-      <div className="text-center my-6">
-        <h2 className="px-5 inline-block text-4xl border-b border-secondary mb-8">
-          Solu
-          <span className="font-bold text-secondary animate-pulse">tions</span>
+      <div className="text-center my-14">
+        <h2 className="animate-pulse px-5 inline-block text-4xl border-b border-secondary mb-4">
+          Solutions
         </h2>
+
+        <p className="text-gray-600">
+        Find out more about our wide array of KYC and AML solutions
+        </p>
       </div>
 
-      <article className="flex flex-col md:flex-row gap-8">
+      <article className="flex flex-col lg:flex-row gap-8">
         <div>
-          <h3 className="text-lg font-bold">Customer Screening</h3>
+          <h3 className="text-lg font-bold">{`A) Customer Screening`}</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-            laudantium velit laboriosam. Iure, excepturi harum? Autem
-            consectetur provident eaque ipsum!
+            Our customer screening solution offers unparalleled global coverage,
+            intelligent technology, and an extensive array of data sources,
+            providing you with the utmost peace of mind.
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-10">
+        <div className="flex flex-col sm:flex-row gap-20">
           {/* 1 */}
           <div>
             <div>
-              <RiCustomerService2Line className="text-3xl" />
-              <h3 className="my-2">Title</h3>
+              <img className="w-16" src={a1} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Sanction & PEP screening</h3>
             </div>
 
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium facere ex in nam modi aperiam, nostrum placeat minus
-              fugiat? Ea.
+              Benefit from our screening capability, which delivers extensive
+              coverage of sanctioned individuals, Politically Exposed Persons
+              (PEPs), and companies.
             </div>
           </div>
 
           {/* 2 */}
           <div>
             <div>
-              <RiCustomerService2Line className="text-3xl" />
-              <h3 className="my-2">Title</h3>
+              <img className="w-16" src={b1} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Adverse media checks</h3>
             </div>
 
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium facere ex in nam modi aperiam, nostrum placeat minus
-              fugiat? Ea.
+              Safeguard your reputation by leveraging our AI-powered adverse
+              media service to screen customers before onboarding them, ensuring
+              comprehensive risk mitigation.
             </div>
           </div>
         </div>
       </article>
 
-      <article className="flex flex-col sm:flex-row lg:gap-10 gap-6 justify-end items-end mt-6 mb-8">
+      <article className="flex flex-col sm:flex-row lg:gap-[3rem] gap-6 justify-end items-end mt-6 md:mb-8 mb-4">
         {/* 3 */}
-        <div className="md:max-w-[29.4%] max-w-auto">
+        <div className="lg:max-w-[21.7rem] max-w-full">
           <div>
-            <RiCustomerService2Line className="text-3xl" />
-            <h3 className="my-2">Title</h3>
+            <img className="w-16" src={c1} alt={`Icon`} />
+            <h3 className="my-2 font-bold">Watchlist screening</h3>
           </div>
 
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            facere ex in nam modi aperiam, nostrum placeat minus fugiat? Ea.
+            Utilize Hobzz’s comprehensive coverage of global AML watchlist
+            sources and flexible automation features, seamlessly integrated with
+            Complycube, to ensure compliance with the most stringent
+            regulations.
           </div>
         </div>
+        
 
         {/* 4 */}
-        <div className="md:max-w-[29.4%] max-w-auto">
+        <div className="lg:max-w-[21.7rem] max-w-full">
           <div>
-            <RiCustomerService2Line className="text-3xl" />
-            <h3 className="my-2">Title</h3>
+            <img className="w-16" src={a2} alt={`Icon`} />
+            <h3 className="my-2 font-bold">Continuous monitoring</h3>
           </div>
 
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            facere ex in nam modi aperiam, nostrum placeat minus fugiat? Ea.
+            Stay ahead of your Ongoing Due Diligence (ODD) requirements with our
+            continuous monitoring service, receiving real-time notifications of
+            any changes in your customers’ status.
           </div>
         </div>
       </article>

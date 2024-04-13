@@ -1,73 +1,79 @@
-import { RiCustomerService2Line } from "react-icons/ri";
+import b2 from "../../../images/2b.png";
+import c2 from "../../../images/2c.png";
+
+import a3 from "../../../images/3a.png";
+import b3 from "../../../images/3b.png";
 
 const IdentityAssurance = () => {
   return (
     <section className="container-page px-3 my-16">
-      <article className="flex flex-col md:flex-row gap-5">
+      <article className="flex flex-col lg:flex-row gap-8">
         <div>
-          <h3 className="text-lg font-bold">Identity Assurance</h3>
+          <h3 className="text-lg font-bold">{`B) Identity Assurance`}</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-            laudantium velit laboriosam. Iure, excepturi harum? Autem
-            consectetur provident eaque ipsum!
+            Our robust identity verification suite empowers you to establish the
+            appropriate Level of Assurance (LoA) quickly and reliably for your
+            specific use case.
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-8">
+        <div className="flex flex-col sm:flex-row gap-20">
           {/* 1 */}
-          <div>
+          <div className="md:max-w-[73rem] max-w-full">
             <div>
-              <RiCustomerService2Line className="text-3xl" />
-              <h3 className="my-2">Title</h3>
+              <img className="w-16" src={b2} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Document Verification</h3>
             </div>
 
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium facere ex in nam modi aperiam, nostrum placeat minus
-              fugiat? Ea.
+              Enhance user experience with our top-tier document verification
+              service, offering a streamlined and rapid verification process
+              guided by clear instructions.
             </div>
           </div>
 
           {/* 2 */}
-          <div>
+          <div className="md:max-w-[73rem] max-w-full">
             <div>
-              <RiCustomerService2Line className="text-3xl" />
-              <h3 className="my-2">Title</h3>
+              <img className="w-16" src={c2} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Customer Authentication</h3>
             </div>
 
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium facere ex in nam modi aperiam, nostrum placeat minus
-              fugiat? Ea.
+              Strengthen product security and limit user access seamlessly,
+              without introducing unnecessary friction to your customers’
+              experience/
             </div>
           </div>
         </div>
       </article>
 
-      <article className="flex flex-col sm:flex-row lg:gap-10 gap-6 justify-end items-end mt-6 mb-8">
+      <article className="flex flex-col sm:flex-row lg:gap-[3rem] gap-6 justify-end items-end mt-6 md:mb-8 mb-4">
         {/* 3 */}
-        <div className="md:max-w-[29.4%] max-w-auto">
+        <div className="lg:max-w-[22.5rem] max-w-full">
           <div>
-            <RiCustomerService2Line className="text-3xl" />
-            <h3 className="my-2">Title</h3>
+            <img className="w-16" src={a3} alt={`Icon`} />
+            <h3 className="my-2 font-bold">Address Verification</h3>
           </div>
 
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            facere ex in nam modi aperiam, nostrum placeat minus fugiat? Ea.
+            Leverage our intelligent capture solutions to extract pertinent
+            details from Proof of Address (PoA) documents and validate them
+            against client and location data effortlessly.
           </div>
         </div>
 
         {/* 4 */}
-        <div className="md:max-w-[29.4%] max-w-auto">
+        <div className="lg:max-w-[22.5rem] max-w-full">
           <div>
-            <RiCustomerService2Line className="text-3xl" />
-            <h3 className="my-2">Title</h3>
+            <img className="w-16" src={b3} alt={`Icon`} />
+            <h3 className="my-2 font-bold">Biometric Verification</h3>
           </div>
 
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            facere ex in nam modi aperiam, nostrum placeat minus fugiat? Ea.
+            Employ our advanced biometric checks to ensure the identity document
+            presenter matches the individual being verified, bolstering security
+            measures effectively.
           </div>
         </div>
       </article>
