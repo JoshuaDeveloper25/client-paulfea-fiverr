@@ -2,8 +2,8 @@ import about2 from "../../../images/about2.png";
 
 const AboutUsInformationTwo = () => {
   return (
-    <section className="container-page px-3">
-      <article className="flex flex-col md:flex-row gap-6 py-5">
+    <section className="container-page px-3 mt-12">
+      <article className="flex flex-col md:flex-row gap-16 py-5">
         <div className="flex-1">
           <img
             loading="lazy"
@@ -15,19 +15,27 @@ const AboutUsInformationTwo = () => {
         </div>
 
         <div className="flex-1">
-          <p className="mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            ea quae deserunt consequatur ratione temporibus dolores hic expedita
-            ipsam animi obcaecati, eum incidunt. Voluptates commodi explicabo
-            vitae corporis eius ab sunt fugit dicta itaque iste ratione
-            consequatur, velit et fugiat quisquam deserunt minima voluptate.
-            Illo ipsa iusto magni ad ipsum.
+          <p className="text-gray-700">
+            While internet businesses are outpacing traditional sectors in
+            growth, global online commerce still represents a mere fraction of
+            overall economic activity, accounting for approximately 3 percent in
+            2018, as reported by the International Monetary Fund.
           </p>
 
-          <p>
-            Dolor sit amet consectetur adipisicing elit. Laudantium ea quae
-            deserunt consequatur ratione temporibus dolores hic expedita ipsam
-            animi obcaecati, eum incidunt.
+          <p className="text-gray-700 my-3">
+            The barriers to further expansion are well-documented: regulatory
+            intricacies, trust deficits, and outdated financial infrastructures
+            hinder the full potential of the digital economy.
+          </p>
+
+          <p className="text-gray-700">
+            At Hobzz, we recognize the imperative of overcoming these obstacles.
+            That's why we partner with ComplyCube, a dedicated platform
+            streamlining regulatory compliance and fostering trust among
+            businesses. By simplifying compliance processes and facilitating
+            trust-building measures, ComplyCube accelerates growth trajectories
+            and boosts economic productivity for both new ventures and
+            established enterprises alike.
           </p>
         </div>
       </article>

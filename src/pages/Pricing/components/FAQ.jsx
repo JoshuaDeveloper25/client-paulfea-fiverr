@@ -14,7 +14,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="container-page px-3">
+    <section className="container-page px-3 mt-28">
       <div className="text-center my-10">
         <h2 className=" px-5 inline-block text-4xl border-b border-secondary">
           Frequently {` `}

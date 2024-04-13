@@ -13,7 +13,7 @@ const FAQInfo = ({
         <button
           className={`${
             activeElement === faqId &&
-            `text-primary [box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:!text-primary-400 dark:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]`
+            `text-secondary font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:!text-primary-400 dark:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]`
           } group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
           type="button"
           onClick={() => handleClick(faqId)}
