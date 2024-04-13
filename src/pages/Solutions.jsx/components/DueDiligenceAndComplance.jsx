@@ -1,8 +1,8 @@
-import c3 from "../../../images/3c.png";
+import c3 from '../../../images/3c.png';
 
-import a4 from "../../../images/4a.png";
-import b4 from "../../../images/4b.png";
-import c4 from "../../../images/4c.png";
+import a4 from '../../../images/4a.png';
+import b4 from '../../../images/4b.png';
+import c4 from '../../../images/4c.png';
 
 const DueDiligenceAndComplance = () => {
   return (
@@ -17,8 +17,7 @@ const DueDiligenceAndComplance = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-20">
-          {/* 1 */}
+        <article className="grid md:grid-cols-2 gap-10">
           <div>
             <div>
               <img className="w-16" src={c3} alt={`Icon`} />
@@ -45,37 +44,35 @@ const DueDiligenceAndComplance = () => {
               seamlessly integrable AML platform.
             </div>
           </div>
-        </div>
-      </article>
 
-      <article className="flex flex-col sm:flex-row lg:gap-[3rem] gap-6 justify-end items-end mt-6 mb-8">
-        {/* 3 */}
-        <div className="lg:max-w-[29.4%] max-w-auto">
-          <div>
-            <img className="w-16" src={b4} alt={`Icon`} />
-            <h3 className="my-2 font-bold">Customer Due Diligence</h3>
+          {/* 3 */}
+          <div className="max-w-auto">
+            <div>
+              <img className="w-16" src={b4} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Customer Due Diligence</h3>
+            </div>
+
+            <div>
+              Whether performing standard customer due diligence (CDD) or
+              enhanced due diligence (EDD), rely on our best-in-class onboarding
+              flows to ensure compliance and mitigate risks effectively.
+            </div>
           </div>
 
-          <div>
-            Whether performing standard customer due diligence (CDD) or enhanced
-            due diligence (EDD), rely on our best-in-class onboarding flows to
-            ensure compliance and mitigate risks effectively.
-          </div>
-        </div>
+          {/* 4 */}
+          <div className="max-w-auto">
+            <div>
+              <img className="w-16" src={c4} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Risk Score</h3>
+            </div>
 
-        {/* 4 */}
-        <div className="lg:max-w-[29.4%] max-w-auto">
-          <div>
-            <img className="w-16" src={c4} alt={`Icon`} />
-            <h3 className="my-2 font-bold">Risk Score</h3>
+            <div>
+              Utilize our proprietary risk engine, which employs advanced
+              algorithms to calculate AML risk scores for your customers,
+              providing you with clear low, medium, or high-risk assessments.
+            </div>
           </div>
-
-          <div>
-            Utilize our proprietary risk engine, which employs advanced
-            algorithms to calculate AML risk scores for your customers,
-            providing you with clear low, medium, or high-risk assessments.
-          </div>
-        </div>
+        </article>
       </article>
     </section>
   );

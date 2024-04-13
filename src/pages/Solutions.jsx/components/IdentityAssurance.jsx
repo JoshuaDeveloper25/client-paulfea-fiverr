@@ -1,12 +1,12 @@
-import b2 from "../../../images/2b.png";
-import c2 from "../../../images/2c.png";
+import b2 from '../../../images/2b.png';
+import c2 from '../../../images/2c.png';
 
-import a3 from "../../../images/3a.png";
-import b3 from "../../../images/3b.png";
+import a3 from '../../../images/3a.png';
+import b3 from '../../../images/3b.png';
 
 const IdentityAssurance = () => {
   return (
-    <section className="container-page px-3 my-16">
+    <section className="container-page px-3 my-16 flex flex-col gap-8 lg:flex-row">
       <article className="flex flex-col lg:flex-row gap-8">
         <div>
           <h3 className="text-lg font-bold">{`B) Identity Assurance`}</h3>
@@ -16,41 +16,36 @@ const IdentityAssurance = () => {
             specific use case.
           </p>
         </div>
-
-        <div className="flex flex-col sm:flex-row gap-20">
-          {/* 1 */}
-          <div className="md:max-w-[73rem] max-w-full">
-            <div>
-              <img className="w-16" src={b2} alt={`Icon`} />
-              <h3 className="my-2 font-bold">Document Verification</h3>
-            </div>
-
-            <div>
-              Enhance user experience with our top-tier document verification
-              service, offering a streamlined and rapid verification process
-              guided by clear instructions.
-            </div>
-          </div>
-
-          {/* 2 */}
-          <div className="md:max-w-[73rem] max-w-full">
-            <div>
-              <img className="w-16" src={c2} alt={`Icon`} />
-              <h3 className="my-2 font-bold">Customer Authentication</h3>
-            </div>
-
-            <div>
-              Strengthen product security and limit user access seamlessly,
-              without introducing unnecessary friction to your customers’
-              experience/
-            </div>
-          </div>
-        </div>
       </article>
 
-      <article className="flex flex-col sm:flex-row lg:gap-[3rem] gap-6 justify-end items-end mt-6 md:mb-8 mb-4">
-        {/* 3 */}
-        <div className="lg:max-w-[22.5rem] max-w-full">
+      <article className="grid md:grid-cols-2 gap-10">
+        <div className="max-w-full">
+          <div>
+            <img className="w-16" src={b2} alt={`Icon`} />
+            <h3 className="my-2 font-bold">Document Verification</h3>
+          </div>
+
+          <div>
+            Enhance user experience with our top-tier document verification
+            service, offering a streamlined and rapid verification process
+            guided by clear instructions.
+          </div>
+        </div>
+
+        {/* 2 */}
+        <div className="max-w-full">
+          <div>
+            <img className="w-16" src={c2} alt={`Icon`} />
+            <h3 className="my-2 font-bold">Customer Authentication</h3>
+          </div>
+
+          <div>
+            Strengthen product security and limit user access seamlessly,
+            without introducing unnecessary friction to your customers’
+            experience/
+          </div>
+        </div>
+        <div className="max-w-full">
           <div>
             <img className="w-16" src={a3} alt={`Icon`} />
             <h3 className="my-2 font-bold">Address Verification</h3>
@@ -64,7 +59,7 @@ const IdentityAssurance = () => {
         </div>
 
         {/* 4 */}
-        <div className="lg:max-w-[22.5rem] max-w-full">
+        <div className="max-w-full">
           <div>
             <img className="w-16" src={b3} alt={`Icon`} />
             <h3 className="my-2 font-bold">Biometric Verification</h3>

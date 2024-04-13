@@ -1,8 +1,8 @@
-import a1 from "../../../images/1a.png";
-import b1 from "../../../images/1b.png";
-import c1 from "../../../images/1c.png";
+import a1 from '../../../images/1a.png';
+import b1 from '../../../images/1b.png';
+import c1 from '../../../images/1c.png';
 
-import a2 from "../../../images/2a.png";
+import a2 from '../../../images/2a.png';
 
 const CustomerScreening = () => {
   return (
@@ -13,7 +13,7 @@ const CustomerScreening = () => {
         </h2>
 
         <p className="text-gray-600">
-        Find out more about our wide array of KYC and AML solutions
+          Find out more about our wide array of KYC and AML solutions
         </p>
       </div>
 
@@ -27,7 +27,7 @@ const CustomerScreening = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-20">
+        <article className="grid md:grid-cols-2 gap-10">
           {/* 1 */}
           <div>
             <div>
@@ -55,39 +55,36 @@ const CustomerScreening = () => {
               comprehensive risk mitigation.
             </div>
           </div>
-        </div>
-      </article>
 
-      <article className="flex flex-col sm:flex-row lg:gap-[3rem] gap-6 justify-end items-end mt-6 md:mb-8 mb-4">
-        {/* 3 */}
-        <div className="lg:max-w-[21.7rem] max-w-full">
-          <div>
-            <img className="w-16" src={c1} alt={`Icon`} />
-            <h3 className="my-2 font-bold">Watchlist screening</h3>
+          {/* 3 */}
+          <div className="max-w-full">
+            <div>
+              <img className="w-16" src={c1} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Watchlist screening</h3>
+            </div>
+
+            <div>
+              Utilize Hobzz’s comprehensive coverage of global AML watchlist
+              sources and flexible automation features, seamlessly integrated
+              with Complycube, to ensure compliance with the most stringent
+              regulations.
+            </div>
           </div>
 
-          <div>
-            Utilize Hobzz’s comprehensive coverage of global AML watchlist
-            sources and flexible automation features, seamlessly integrated with
-            Complycube, to ensure compliance with the most stringent
-            regulations.
-          </div>
-        </div>
-        
+          {/* 4 */}
+          <div className="max-w-full">
+            <div>
+              <img className="w-16" src={a2} alt={`Icon`} />
+              <h3 className="my-2 font-bold">Continuous monitoring</h3>
+            </div>
 
-        {/* 4 */}
-        <div className="lg:max-w-[21.7rem] max-w-full">
-          <div>
-            <img className="w-16" src={a2} alt={`Icon`} />
-            <h3 className="my-2 font-bold">Continuous monitoring</h3>
+            <div>
+              Stay ahead of your Ongoing Due Diligence (ODD) requirements with
+              our continuous monitoring service, receiving real-time
+              notifications of any changes in your customers’ status.
+            </div>
           </div>
-
-          <div>
-            Stay ahead of your Ongoing Due Diligence (ODD) requirements with our
-            continuous monitoring service, receiving real-time notifications of
-            any changes in your customers’ status.
-          </div>
-        </div>
+        </article>
       </article>
     </section>
   );
