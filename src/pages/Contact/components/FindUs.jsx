@@ -1,7 +1,7 @@
 const FindUs = () => {
   return (
     <section className="container-page px-3 my-20 mb-24">
-      <article className="flex md:flex-row flex-col-reverse gap-8 py-5">
+      <article className="flex md:flex-row-reverse flex-col-reverse gap-8 py-5">
         <div className="flex-1">
           <h3 className="text-center text-3xl mb-3">
             Find{" "}

@@ -1,13 +1,12 @@
-import { categoryOptions } from "../../../DB/DB";
-import getInTouch from "../../../images/contact.jpg";
+import { categoryOptions } from '../../../DB/DB';
+import getInTouch from '../../../images/contact.jpg';
 
 const GetInTouch = () => {
   return (
     <section className="container-page px-3 my-16">
       <div className="text-center mt-6 mb-16">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
-          Contact{" "}
-          <span className="font-bold text-secondary animate-pulse">Us</span>
+          Contact Us
         </h2>
       </div>
 
@@ -16,7 +15,7 @@ const GetInTouch = () => {
           <h3 className="text-center text-3xl mb-3">
             <span className="font-bold text-secondary animate-pulse">
               Get In Touch
-            </span>{" "}
+            </span>{' '}
           </h3>
 
           <div className="flex flex-col gap-3">
@@ -60,6 +59,15 @@ const GetInTouch = () => {
                   ))}
                 </select>
               </div>
+
+              <div className="flex-1">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  cols={30}
+                  className="outline-none w-full px-2 py-1 rounded-sm focus:border-secondary border resize-y"
+                ></textarea>
+              </div>
             </div>
           </div>
 
@@ -72,9 +80,9 @@ const GetInTouch = () => {
         </form>
 
         <div className="flex-1">
-          <div className="md:max-w-full max-w-lg mx-auto">
+          <div className="md:max-w-full max-w-lg mx-auto h-full">
             <img
-              className="rounded w-full hover:opacity-85 animation-fade"
+              className="rounded w-full h-full hover:opacity-85 animation-fade object-cover"
               loading="lazy"
               decoding="async"
               src={getInTouch}

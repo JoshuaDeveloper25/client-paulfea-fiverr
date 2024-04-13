@@ -1,5 +1,5 @@
-import { pricingCards } from "../../../DB/DB";
-import { FaCheck } from "react-icons/fa6";
+import { pricingCards } from '../../../DB/DB';
+import { FaCheck } from 'react-icons/fa6';
 
 const PricingCards = () => {
   return (
@@ -19,43 +19,50 @@ const PricingCards = () => {
         {pricingCards.map((pricingCard) => {
           return (
             <div
-              style={{ backfaceVisibility: "hidden"}}
-              className={`${pricingCard?.pricingHighStatus && 'border-secondary'} relative min-h-[38rem] animation-fade hover:scale-105 border flex flex-col items-center justify-center shadow-lg rounded-md sm:min-w-[20rem] w-full sm:w-auto text-center py-6`}
+              style={{ backfaceVisibility: 'hidden' }}
+              className={`${
+                pricingCard?.pricingHighStatus && 'border-secondary'
+              } relative min-h-[38rem] animation-fade hover:scale-105 border flex flex-col items-center justify-between shadow-lg rounded-md max-w-[20rem] w-full text-center py-6`}
               key={pricingCard?.id}
             >
-              <h3 className="text-lg font-bold">{pricingCard?.pricingTitle}</h3>
-              <h4 className="max-w-60 mx-auto text-sm my-1 text-gray-800">
-                {pricingCard?.pricingDesc}
-              </h4>
-              <h4 className="text-sm font-bold my-1 text-gray-800">
-                {pricingCard?.pricingChecks}
-              </h4>
+              <div>
+                <h3 className="text-lg font-bold">
+                  {pricingCard?.pricingTitle}
+                </h3>
+                <h4 className="max-w-60 mx-auto text-sm my-1 text-gray-800">
+                  {pricingCard?.pricingDesc}
+                </h4>
+                <h4 className="text-sm font-bold my-1 text-gray-800">
+                  {pricingCard?.pricingChecks}
+                </h4>
 
-              <ul className="my-4">
-                {pricingCard?.pricingDetails?.map((pricingDetail, id) => {
-                  return (
-                    <li className="my-2 text-gray-900" key={id}>
-                      <FaCheck className="inline text-secondary me-3" />
-                      {pricingDetail}
-                    </li>
-                  );
-                })}
-              </ul>
+                <ul className="my-4 text-start">
+                  {pricingCard?.pricingDetails?.map((pricingDetail, id) => {
+                    return (
+                      <li className="my-2 text-gray-900" key={id}>
+                        <FaCheck className="inline text-secondary me-3" />
+                        {pricingDetail}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
 
-              <h4 className="text-sm font-bold my-1 text-gray-800">
-                {pricingCard?.pricingLargeText}
-              </h4>
+              <div>
+                <h4 className="text-3xl font-bold my-1 text-gray-800">
+                  {pricingCard?.pricingLargeText}
+                </h4>
 
-              <h4 className="text-sm font-bold my-1 text-gray-800">
-                {pricingCard?.pricingSmallText}
-              </h4>
-
-              <button
-                className="text-white bg-secondary px-2 py-1 rounded hover:scale-105 animation-fade mt-4"
-                type="button"
-              >
-                {pricingCard?.pricingButton}
-              </button>
+                <h4 className="text-sm font-regular my-1 text-gray-800">
+                  {pricingCard?.pricingSmallText}
+                </h4>
+                <button
+                  className="text-white bg-secondary px-2 py-1 rounded hover:scale-105 animation-fade mt-4"
+                  type="button"
+                >
+                  {pricingCard?.pricingButton}
+                </button>
+              </div>
 
               {pricingCard?.pricingHighStatus && (
                 <div className="bg-secondary text-white w-40 absolute rounded -top-5">
