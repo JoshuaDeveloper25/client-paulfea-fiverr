@@ -6,7 +6,6 @@ import axios from "axios";
 
 const News = () => {
   const [query, setQuery] = useState({ viewAll: true, page: 1, title: "" });
-  console.log(query);
 
   const { data, isLoading, refetch, isFetching } = useQuery({
     queryKey: ["news"],

@@ -1,13 +1,10 @@
 import { AiOutlineBars } from "react-icons/ai";
 import { FaCalendarAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import news1 from "../../../images/news1.png";
-import news2 from "../../../images/news2.png";
-import news3 from "../../../images/news3.png";
 
+import formatDate from "../../../utils/formatDate";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import formatDate from "../../../utils/formatDate";
 
 const News = () => {
   const navigate = useNavigate();
@@ -20,7 +17,7 @@ const News = () => {
   });
 
   if (isLoading) return <p>Loading...</p>;
-  
+
   return (
     <section className="container-page px-3 my-16">
       <h3 className="text-center text-4xl">
@@ -33,9 +30,13 @@ const News = () => {
 
       <div className="flex flex-wrap justify-center row-gap-3 gap-7">
         {data?.length > 0 &&
-          data?.map((info, id) => {
+          data?.map((info) => {
             return (
-              <div key={id} className="max-w-[23rem] shadow-lg rounded-sm">
+              <div
+                className="max-w-[23rem] cursor-pointer shadow-lg rounded-sm"
+                onClick={() => navigate(`/blog/${info._id}`)}
+                key={info._id}
+              >
                 <img
                   src={info?.image[0]?.cloudinary_url}
                   className="rounded-sm object-contain h-44 w-full"
@@ -66,7 +67,7 @@ const News = () => {
                     {info?.textInfo[0]?.subheader}
                   </p>
 
-                  <p className="text-gray-500 text-[.8rem]">
+                  <p className="text-gray-500 text-[.8rem] truncate">
                     {info?.textInfo[0]?.paragraph}
                   </p>
                 </div>

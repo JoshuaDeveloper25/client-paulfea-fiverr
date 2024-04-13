@@ -21,12 +21,13 @@ import LogIn from "./pages/LogIn/LogIn";
 import Contact from "./pages/Contact/Contact";
 import Pricing from "./pages/Pricing/Pricing";
 import About from "./pages/About/About";
-import Solutions from "./pages/Solutions.jsx/Solutions";
+import Solutions from "./pages/Solutions/Solutions";
 import News from "./pages/News/News";
 import ManageUsers from "./admin/ManageUsers";
 import ManageNews from "./admin/ManageNews";
 import RootAdmin from "./admin/RootAdmin";
-import HomeAdmin from "./admin/HomeAdmin/HomeAdmin"
+import HomeAdmin from "./admin/HomeAdmin/HomeAdmin";
+import Blog from "./pages/Blog/Blog";
 
 // Paths of all webpages from application
 const router = createBrowserRouter([
@@ -78,6 +79,11 @@ const router = createBrowserRouter([
       {
         path: "/news",
         element: <News />,
+      },
+
+      {
+        path: "/blog/:blogId",
+        element: <Blog />,
       },
     ],
   },

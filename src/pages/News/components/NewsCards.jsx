@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
+import formatDate from "../../../utils/formatDate";
 import { AiOutlineBars } from "react-icons/ai";
 import { FaCalendarAlt } from "react-icons/fa";
-import formatDate from "../../../utils/formatDate";
 
 const NewsCards = ({ query, isFetching, handleQuery, data }) => {
+  const navigate = useNavigate();
+
   return (
     <section className="container-page px-3 my-7">
       <div className="text-center my-6">
@@ -20,14 +23,20 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
           <button
             onClick={() => handleQuery("viewAll", true)}
             type="button"
-            className={query?.viewAll ? "border-b-2 border-secondary text-secondary font-bold " : null} 
+            className={
+              query?.viewAll
+                ? "border-b-2 border-secondary text-secondary font-bold "
+                : null
+            }
           >
             View All
           </button>
 
           <button
             className={
-              query?.category?.toLowerCase() === "news" ? "border-b-2 border-secondary text-secondary font-bold " : null
+              query?.category?.toLowerCase() === "news"
+                ? "border-b-2 border-secondary text-secondary font-bold "
+                : null
             }
             onClick={() => handleQuery("category", "news")}
             type="button"
@@ -39,7 +48,9 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             onClick={() => handleQuery("category", "product")}
             type="button"
             className={
-              query?.category?.toLowerCase() === "product" ? "border-b-2 border-secondary text-secondary font-bold " : null
+              query?.category?.toLowerCase() === "product"
+                ? "border-b-2 border-secondary text-secondary font-bold "
+                : null
             }
           >
             Product
@@ -49,7 +60,9 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
             onClick={() => handleQuery("category", "guides")}
             type="button"
             className={
-              query?.category?.toLowerCase() === "guides" ? "border-b-2 border-secondary text-secondary font-bold " : null
+              query?.category?.toLowerCase() === "guides"
+                ? "border-b-2 border-secondary text-secondary font-bold "
+                : null
             }
           >
             Guides
@@ -71,8 +84,13 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
 
       <div className="grid md:grid-cols-3 min-[450px]:grid-cols-2 row-gap-3 gap-7">
         {data?.docs?.map((info) => {
+          console.log(info)
           return (
-            <div key={info._id} className="shadow-lg rounded-sm">
+            <div
+              onClick={() => navigate(`/blog/${info._id}`)}
+              key={info._id}
+              className="shadow-lg rounded-sm cursor-pointer"
+            >
               <img
                 src={info?.image[0]?.cloudinary_url}
                 className="rounded-sm object-contain h-44 w-full"
