@@ -6,7 +6,7 @@ import b3 from '../../../images/3b.png';
 
 const IdentityAssurance = () => {
   return (
-    <section className="container-page px-3 my-16 flex flex-col gap-8 lg:flex-row">
+    <section className="container-page px-3 my-24 flex flex-col gap-8 lg:flex-row">
       <article className="flex flex-col lg:flex-row gap-8">
         <div>
           <h3 className="text-lg font-bold">{`B) Identity Assurance`}</h3>
@@ -45,6 +45,7 @@ const IdentityAssurance = () => {
             experience/
           </div>
         </div>
+        
         <div className="max-w-full">
           <div>
             <img className="w-16" src={a3} alt={`Icon`} />
