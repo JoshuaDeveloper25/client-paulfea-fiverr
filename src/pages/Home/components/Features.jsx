@@ -9,7 +9,7 @@ import feature6 from "../../../images/feature6.png";
 const Features = () => {
   return (
     <>
-      <section className="container-page px-2 my-20">
+      <section className="container-page px-2 md:my-20 my-4">
         <h3 className="text-center text-3xl mb-14 animate-pulse">
           Use <span className="font-bold text-secondary ">Cases</span>{" "}
         </h3>

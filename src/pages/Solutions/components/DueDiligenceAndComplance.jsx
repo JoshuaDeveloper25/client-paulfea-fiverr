@@ -6,7 +6,7 @@ import c4 from '../../../images/4c.png';
 
 const DueDiligenceAndComplance = () => {
   return (
-    <section className="container-page px-3">
+    <section className="container-page px-3 mb-10">
       <article className="flex flex-col lg:flex-row gap-8">
         <div>
           <h3 className="text-lg font-bold">{`C) Due Diligence & Compliance`}</h3>

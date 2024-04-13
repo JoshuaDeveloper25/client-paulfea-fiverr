@@ -19,7 +19,7 @@ const News = () => {
   if (isLoading) return <p>Loading...</p>;
 
   return (
-    <section className="container-page px-3 my-16">
+    <section className="container-page px-3 md:my-16 my-6">
       <h3 className="text-center text-4xl">
         Latest{" "}
         <span className="font-bold text-secondary  animate-pulse">News</span>
@@ -33,7 +33,7 @@ const News = () => {
           data?.map((info) => {
             return (
               <div
-                className="max-w-[23rem] cursor-pointer shadow-lg rounded-sm"
+                className="md:max-w-[23rem] max-w-[18rem] cursor-pointer shadow-lg rounded-sm"
                 onClick={() => navigate(`/blog/${info._id}`)}
                 key={info._id}
               >
@@ -41,7 +41,7 @@ const News = () => {
                   src={info?.image[0]?.cloudinary_url}
                   className="rounded-sm object-contain h-44 w-full"
                 />
-                <div className="px-4 py-6">
+                <div className="px-4 md:py-6 py-2">
                   <h3 className="text-md font-bold text-secondary text-[1rem] leading-5">
                     {info?.title}
                   </h3>

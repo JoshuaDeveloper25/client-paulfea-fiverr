@@ -3,8 +3,8 @@ import getInTouch from '../../../images/contact.jpg';
 
 const GetInTouch = () => {
   return (
-    <section className="container-page px-3 my-16">
-      <div className="text-center mt-6 mb-16">
+    <section className="container-page px-3 md:my-16 my-8">
+      <div className="text-center mt-6 md:mb-16 mb-8">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
           Contact Us
         </h2>

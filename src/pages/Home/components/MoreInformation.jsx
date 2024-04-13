@@ -2,7 +2,7 @@ import moreInformation from "../../../images/moreInformation.png";
 
 const MoreInformation = () => {
   return (
-    <section className="container-page px-3 my-32">
+    <section className="container-page px-3 md:my-32 my-8">
       <article className="flex flex-col md:flex-row gap-6 py-6">
         <div className="flex-1">
           <div className="md:max-w-full max-w-lg mx-auto">

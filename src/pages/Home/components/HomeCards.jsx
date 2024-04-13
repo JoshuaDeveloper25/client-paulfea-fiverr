@@ -4,7 +4,7 @@ import cardImageThree from "../../../images/container3.png";
 
 const HomeCards = () => {
   return (
-    <section className="container-page px-2 my-16">
+    <section className="container-page px-2 md:my-16 my-8">
       <div className="text-center my-8">
         <h2 className="text-secondary text-3xl font-bold">
           Lorem ipsum dolor sit amet.

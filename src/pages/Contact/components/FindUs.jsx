@@ -1,6 +1,6 @@
 const FindUs = () => {
   return (
-    <section className="container-page px-3 my-20 mb-24">
+    <section className="container-page px-3 md:my-20 my-8 md:mb-24 mb-10">
       <article className="flex md:flex-row-reverse flex-col-reverse gap-8 py-5">
         <div className="flex-1">
           <h3 className="text-center text-3xl mb-3 animate-pulse font-bold">
