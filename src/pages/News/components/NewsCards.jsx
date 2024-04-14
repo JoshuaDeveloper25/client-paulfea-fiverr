@@ -114,7 +114,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
                   </div>
                 </div>
 
-                <p className="text-gray-500 text-[.8rem]">
+                <p className="text-gray-500 text-[.8rem] truncate">
                   {info?.textInfo[0]?.paragraph}
                 </p>
               </div>
