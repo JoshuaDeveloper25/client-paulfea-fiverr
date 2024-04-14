@@ -82,7 +82,8 @@ const Footer = () => {
               Blog
             </Link>
             <Link
-              to={`#`}
+              to={`/pricing/#faq`}
+              
               className="hover:text-secondary transition-all duration-150"
             >
               FAQ's
