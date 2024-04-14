@@ -6,7 +6,7 @@ import b3 from '../../../images/3b.png';
 
 const IdentityAssurance = () => {
   return (
-    <section className="container-page px-3 md:my-24 my-10 flex flex-col gap-8 lg:flex-row">
+    <section id='IdentityAssurance' className="container-page px-3 md:my-24 my-10 flex flex-col gap-8 lg:flex-row">
       <article className="flex flex-col lg:flex-row gap-8">
         <div>
           <h3 className="text-lg font-bold">{`B) Identity Assurance`}</h3>

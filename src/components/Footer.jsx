@@ -1,13 +1,13 @@
-import { FaFacebookSquare } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
-import { BsTwitterX } from "react-icons/bs";
+import { FaFacebookSquare } from 'react-icons/fa';
+import { CiLinkedin } from 'react-icons/ci';
+import { BsTwitterX } from 'react-icons/bs';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="mt-auto px-3 py-10 bg-[#353848] text-white">
-      <div className="container-page flex flex-col sm:flex-row sm:items-start items-center justify-between">
+      <div className="container-page flex flex-col sm:flex-row sm:items-start items-center justify-between flex-wrap">
         {/* NewsLetter */}
         <div>
           <div className="flex gap-3 items-center mb-2">
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
 
           <div className="sm:flex hidden mt-5">
-            <p>&copy; 2024 Hobee - All rights reserved</p>
+            <p>&copy; 2024 Hobzz- All rights reserved</p>
           </div>
         </div>
 
@@ -48,22 +48,22 @@ const Footer = () => {
 
           <div className="flex flex-col items-center">
             <Link
-              to={`#`}
+              to={`/solutions#CustomerScreening`}
               className="hover:text-secondary transition-all duration-150"
             >
-              X
+              Customer Screening
             </Link>
             <Link
-              to={`#`}
+              to={`/solutions#IdentityAssurance`}
               className="hover:text-secondary transition-all duration-150"
             >
-              Y
+              Identity Assurance
             </Link>
             <Link
-              to={`#`}
+              to={`/solutions#DueDiligence&Compliance`}
               className="hover:text-secondary transition-all duration-150"
             >
-              Z
+              Due Diligence & Compliance
             </Link>
           </div>
         </div>
@@ -82,8 +82,7 @@ const Footer = () => {
               Blog
             </Link>
             <Link
-              to={`/pricing/#faq`}
-              
+              to={`/pricing#faq`}
               className="hover:text-secondary transition-all duration-150"
             >
               FAQ's
@@ -148,7 +147,7 @@ const Footer = () => {
         </div>
 
         <div className="sm:hidden flex mt-5">
-          <p>&copy; 2024 Hobee - All rights reserved</p>
+          <p>&copy; 2024 Hobzz- All rights reserved</p>
         </div>
       </div>
     </footer>

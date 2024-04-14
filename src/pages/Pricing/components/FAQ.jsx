@@ -15,6 +15,8 @@ const FAQ = () => {
     }
   };
 
+  console.log(location)
+
   useEffect(() => {
     const faq = document.getElementById('faq');
 
@@ -22,7 +24,7 @@ const FAQ = () => {
       // Desplaza la ventana para que la sección sea visible
       faq.scrollIntoView({ behavior: 'smooth' });
     }
-  }, []);
+  }, [location.key]);
 
   return (
     <section id="faq" className="container-page px-3 mt-28">
