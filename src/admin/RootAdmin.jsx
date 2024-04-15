@@ -49,7 +49,7 @@ const RootAdmin = () => {
         tabIndex="-1"
         aria-labelledby="drawer-label"
       >
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-svh">
           <h5
             id="drawer-label"
             className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
