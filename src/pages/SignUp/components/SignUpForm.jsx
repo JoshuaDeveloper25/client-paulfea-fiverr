@@ -96,8 +96,8 @@ const SignUpForm = ({ children }) => {
               Contact
             </Link>
             -
-            <Link className="hover:text-secondary animation-fade">Privacy</Link>
-            -<Link className="hover:text-secondary animation-fade">Terms</Link>
+            <Link to={`/privacy`} className="hover:text-secondary animation-fade">Privacy</Link>
+            -<Link to={`/terms`} className="hover:text-secondary animation-fade">Terms</Link>
           </div>
         </div>
       </section>
