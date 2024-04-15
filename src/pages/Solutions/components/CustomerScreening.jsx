@@ -8,7 +8,7 @@ const CustomerScreening = () => {
   return (
     <>
       <div className="text-center my-14">
-        <h2 className="animate-pulse px-5 inline-block text-4xl border-b border-secondary mb-4">
+        <h2 className="px-5 inline-block text-4xl border-b border-secondary mb-4">
           Solutions
         </h2>
 
@@ -23,7 +23,7 @@ const CustomerScreening = () => {
       >
         <article className="flex flex-col lg:flex-row gap-8">
           <div>
-            <h3 className="text-lg font-bold">{`A) Customer Screening`}</h3>
+            <h3 className="text-lg font-bold">{`Customer Screening`}</h3>
             <p>
               Our customer screening solution offers unparalleled global
               coverage, intelligent technology, and an extensive array of data

@@ -76,10 +76,10 @@ const Footer = () => {
 
           <div className="flex flex-col items-center">
             <Link
-              to={`#`}
+              to={`/news`}
               className="hover:text-secondary transition-all duration-150"
             >
-              Blog
+              News
             </Link>
             <Link
               to={`/pricing#faq`}

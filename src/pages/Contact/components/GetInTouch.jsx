@@ -1,5 +1,5 @@
-import { categoryOptions } from '../../../DB/DB';
-import getInTouch from '../../../images/contact.jpg';
+import { categoryOptions } from "../../../DB/DB";
+import getInTouch from "../../../images/contact.jpg";
 
 const GetInTouch = () => {
   return (
@@ -13,9 +13,9 @@ const GetInTouch = () => {
       <article className="flex  md:flex-row flex-col-reverse gap-6 py-5">
         <form className="flex-1">
           <h3 className="text-center text-3xl mb-3">
-            <span className="font-bold text-secondary animate-pulse">
+            <span className="font-bold text-secondary ">
               Get In Touch
-            </span>{' '}
+            </span>{" "}
           </h3>
 
           <div className="flex flex-col gap-3">

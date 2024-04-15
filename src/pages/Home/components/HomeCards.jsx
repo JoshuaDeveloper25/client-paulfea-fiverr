@@ -1,18 +1,20 @@
 import cardImageOne from "../../../images/container1.png";
 import cardImageTwo from "../../../images/container2.png";
 import cardImageThree from "../../../images/container3.png";
+import { useNavigate } from "react-router-dom";
 
 const HomeCards = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="container-page px-2 md:my-16 my-8">
       <div className="text-center my-8">
         <h2 className="text-secondary text-3xl font-bold">
-          Lorem ipsum dolor sit amet.
+          KYC Solutions: Fast, Efficient, Comprehensive
         </h2>
         <p className="text-sm text-gray-400 max-w-3xl mx-auto my-2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          suscipit, itaque recusandae eligendi exercitationem uilam. have
-          suffered alteration, by injected humour, or new randomised words .
+          Perform rapid and cost-effective KYC checks. Verify identities in
+          under 30 seconds and prevent money laundering, terrorism, and fraud.
         </p>
       </div>
 
@@ -37,6 +39,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
+              onClick={() => navigate(`/solutions`)}
               className="bg-secondary shadow-lg  text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
@@ -64,6 +67,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
+              onClick={() => navigate(`/solutions`)}
               className="bg-secondary shadow-lg text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore
@@ -91,6 +95,7 @@ const HomeCards = () => {
             </p>
             <button
               type="button"
+              onClick={() => navigate(`/solutions`)}
               className="bg-secondary shadow-lg text-white hover:bg-secondary/80 animation-fade  px-2 mt-3 mb-7 rounded py-1"
             >
               Explore

@@ -15,8 +15,6 @@ const FAQ = () => {
     }
   };
 
-  console.log(location)
-
   useEffect(() => {
     const faq = document.getElementById('faq');
 

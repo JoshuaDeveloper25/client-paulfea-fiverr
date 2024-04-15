@@ -9,7 +9,7 @@ const IdentityAssurance = () => {
     <section id='IdentityAssurance' className="container-page px-3 md:my-24 my-10 flex flex-col gap-8 lg:flex-row">
       <article className="flex flex-col lg:flex-row gap-8">
         <div>
-          <h3 className="text-lg font-bold">{`B) Identity Assurance`}</h3>
+          <h3 className="text-lg font-bold">{`Identity Assurance`}</h3>
           <p>
             Our robust identity verification suite empowers you to establish the
             appropriate Level of Assurance (LoA) quickly and reliably for your

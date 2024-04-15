@@ -9,7 +9,7 @@ const DueDiligenceAndComplance = () => {
     <section id='DueDiligence&Compliance' className="container-page px-3 mb-10">
       <article className="flex flex-col lg:flex-row gap-8">
         <div>
-          <h3 className="text-lg font-bold">{`C) Due Diligence & Compliance`}</h3>
+          <h3 className="text-lg font-bold">{`Due Diligence & Compliance`}</h3>
           <p>
             Our cutting-edge global compliance platform empowers you to conduct
             thorough investigations and establish business relationships

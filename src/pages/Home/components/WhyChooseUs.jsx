@@ -1,7 +1,10 @@
 import whyChooseUs from "../../../images/whychooseus.jpg";
 import { FaCheck } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const WhyChooseUs = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="container-page px-3 md:my-32 my-10">
       <article className="flex md:flex-row flex-col-reverse gap-6 py-5">
@@ -75,6 +78,7 @@ const WhyChooseUs = () => {
           <button
             className="bg-secondary md:w-auto rounded animation-fade hover:bg-tertiary text-white px-4 py-1 shadow-lg"
             type="button"
+            onClick={() => navigate(`/signup`)}
           >
             Get Started
           </button>

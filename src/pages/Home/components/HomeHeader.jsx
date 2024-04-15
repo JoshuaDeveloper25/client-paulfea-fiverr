@@ -28,6 +28,7 @@ const HomeHeader = () => {
               <button
                 className="animation-fade shadow-lg text-white bg-secondary hover:bg-secondary/80 font-bold px-4 py-1 rounded"
                 type="button"
+                onClick={() => navigate(`/pricing`)}
               >
                 Start Now
               </button>

@@ -36,9 +36,9 @@ const Header = () => {
                 className="HAMBURGER-ICON space-y-2 cursor-pointer"
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-secondary"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-secondary"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-secondary"></span>
+                <span className="block h-0.5 w-8 bg-secondary"></span>
+                <span className="block h-0.5 w-8 bg-secondary"></span>
+                <span className="block h-0.5 w-8 bg-secondary"></span>
               </div>
 
               <div

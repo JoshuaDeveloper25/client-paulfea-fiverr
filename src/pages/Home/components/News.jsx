@@ -22,7 +22,7 @@ const News = () => {
     <section className="container-page px-3 md:my-16 my-6">
       <h3 className="text-center text-4xl">
         Latest{" "}
-        <span className="font-bold text-secondary  animate-pulse">News</span>
+        <span className="font-bold text-secondary">News</span>
       </h3>
       <p className="text-center text-gray-500 text-md mb-8">
         Lastest news, tips and best practices.

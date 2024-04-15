@@ -8,7 +8,7 @@ const CustomerScreening = () => {
   return (
     <section className="container-page px-3">
       <div className="text-center my-14">
-        <h2 className="animate-pulse px-5 inline-block text-4xl border-b border-secondary mb-4">
+        <h2 className="px-5 inline-block text-4xl border-b border-secondary mb-4">
           Solutions
         </h2>
 

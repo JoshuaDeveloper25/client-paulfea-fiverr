@@ -10,7 +10,7 @@ const Features = () => {
   return (
     <>
       <section className="container-page px-2 md:my-20 my-4">
-        <h3 className="text-center text-3xl mb-14 animate-pulse">
+        <h3 className="text-center text-3xl mb-14">
           Use <span className="font-bold text-secondary ">Cases</span>{" "}
         </h3>
 

@@ -2,7 +2,7 @@ const Policy = () => {
   return (
     <section className="container-page px-3 py-3 mb-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl my-3 font-bold text-center">Privacy Policy</h2>
+        <h2 className="text-4xl mb-3 md:mt-9 mt-4 font-bold text-center">Privacy Policy</h2>
 
         <p className="md:mt-10 mt-3 text-end">
           <span className="font-bold">Last Updated</span>: April 14th, 2024

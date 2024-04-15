@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import formatDate from "../../../utils/formatDate";
 import { AiOutlineBars } from "react-icons/ai";
 import { FaCalendarAlt } from "react-icons/fa";
@@ -7,10 +7,10 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
   const navigate = useNavigate();
 
   return (
-    <section className="container-page px-3 my-7">
+    <section id="news" className="container-page px-3 my-7">
       <div className="text-center my-6">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
-          Ne<span className="font-bold text-secondary animate-pulse">ws</span>
+          Ne<span className="font-bold text-secondary">ws</span>
         </h2>
 
         <p className="text-gray-500 mt-3">

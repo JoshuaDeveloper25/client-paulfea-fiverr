@@ -18,7 +18,7 @@ const MoreInformation = () => {
 
         <div className="flex-1">
           <h3 className="text-3xl mb-3 border-b-2 border-secondary pb-3">
-            <span className="font-bold text-secondary animate-pulse">
+            <span className="font-bold text-secondary">
               Enhance Compliance with<span className="block">Seamless KYC Checks</span>
             </span>
           </h3>

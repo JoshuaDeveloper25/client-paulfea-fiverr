@@ -6,7 +6,7 @@ const AboutUsInformationThree = () => {
       <div className="text-center md:my-16 my-10">
         <h2 className="px-5 inline-block text-4xl border-b border-secondary">
           Complycube's powerful{"  "}
-          <span className="font-bold text-secondary animate-pulse">
+          <span className="font-bold text-secondary">
             compliance stack
           </span>
         </h2>

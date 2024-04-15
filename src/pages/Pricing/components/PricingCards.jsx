@@ -1,13 +1,27 @@
-import { pricingCards } from '../../../DB/DB';
-import { FaCheck } from 'react-icons/fa6';
+import { useEffect } from "react";
+import { pricingCards } from "../../../DB/DB";
+import { FaCheck } from "react-icons/fa6";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const PricingCards = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const pricing = document.getElementById("pricing");
+
+    if (pricing && location.hash) {
+      // Desplaza la ventana para que la sección sea visible
+      pricing.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.key]);
+
   return (
-    <section className="container-page px-3">
+    <section id="pricing" className="container-page px-3">
       <div className="text-center my-16">
         <h2 className=" px-5 inline-block text-4xl border-b border-secondary">
           Pric
-          <span className="font-bold text-secondary animate-pulse">ing</span>
+          <span className="font-bold text-secondary">ing</span>
         </h2>
         <p className="text-gray-600 mt-4 max-w-md mx-auto">
           Flexible identity verification pricing and KYC services designed to
@@ -19,9 +33,9 @@ const PricingCards = () => {
         {pricingCards.map((pricingCard) => {
           return (
             <div
-              style={{ backfaceVisibility: 'hidden' }}
+              style={{ backfaceVisibility: "hidden" }}
               className={`${
-                pricingCard?.pricingHighStatus && 'border-secondary'
+                pricingCard?.pricingHighStatus && "border-secondary"
               } relative min-h-[38rem] animation-fade hover:scale-105 border flex flex-col items-center justify-between shadow-lg rounded-md max-w-[20rem] w-full text-center py-6`}
               key={pricingCard?.id}
             >
@@ -59,6 +73,7 @@ const PricingCards = () => {
                 <button
                   className="text-white bg-secondary px-2 py-1 shadow-lg rounded hover:scale-105 animation-fade mt-4"
                   type="button"
+                  onClick={() => navigate(`/signup`)}
                 >
                   {pricingCard?.pricingButton}
                 </button>

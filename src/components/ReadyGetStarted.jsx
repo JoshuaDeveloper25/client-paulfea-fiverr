@@ -7,7 +7,7 @@ const ReadyGetStarted = () => {
   return (
     <section className="mx-3">
       <div
-      style={{backgroundImage: `url(${getStartedImage})`}}
+        style={{ backgroundImage: `url(${getStartedImage})` }}
         className={`container-page px-3 py-7 rounded md:my-5 my-2 border bg-cover bg-center text-white`}
       >
         <h2 className="animate-pulse text-center text-3xl mb-4 font-bold">
@@ -20,6 +20,7 @@ const ReadyGetStarted = () => {
               className="border shadow-lg bg-white text-secondary animation-fade hover:scale-110   rounded px-2 py-1"
               style={{ backfaceVisibility: "hidden" }}
               type="button"
+              onClick={() => navigate(`/pricing`)}
             >
               Start Now
             </button>
