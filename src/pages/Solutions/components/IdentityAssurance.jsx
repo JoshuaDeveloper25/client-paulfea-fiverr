@@ -1,8 +1,8 @@
-import b2 from '../../../images/2b.png';
-import c2 from '../../../images/2c.png';
+import b2 from "../../../images/2b.png";
+import c2 from "../../../images/2c.png";
 
-import a3 from '../../../images/3a.png';
-import b3 from '../../../images/3b.png';
+import a3 from "../../../images/3a.png";
+import b3 from "../../../images/3b.png";
 
 const IdentityAssurance = () => {
   return (
@@ -21,7 +21,13 @@ const IdentityAssurance = () => {
       <article className="grid md:grid-cols-2 gap-10">
         <div className="max-w-full">
           <div>
-            <img className="w-16" src={b2} alt={`Icon`} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-16"
+              src={b2}
+              alt={`Icon`}
+            />
             <h3 className="my-2 font-bold">Document Verification</h3>
           </div>
 
@@ -35,7 +41,13 @@ const IdentityAssurance = () => {
         {/* 2 */}
         <div className="max-w-full">
           <div>
-            <img className="w-16" src={c2} alt={`Icon`} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-16"
+              src={c2}
+              alt={`Icon`}
+            />
             <h3 className="my-2 font-bold">Customer Authentication</h3>
           </div>
 
@@ -45,10 +57,16 @@ const IdentityAssurance = () => {
             experience/
           </div>
         </div>
-        
+
         <div className="max-w-full">
           <div>
-            <img className="w-16" src={a3} alt={`Icon`} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-16"
+              src={a3}
+              alt={`Icon`}
+            />
             <h3 className="my-2 font-bold">Address Verification</h3>
           </div>
 
@@ -62,7 +80,13 @@ const IdentityAssurance = () => {
         {/* 4 */}
         <div className="max-w-full">
           <div>
-            <img className="w-16" src={b3} alt={`Icon`} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-16"
+              src={b3}
+              alt={`Icon`}
+            />
             <h3 className="my-2 font-bold">Biometric Verification</h3>
           </div>
 

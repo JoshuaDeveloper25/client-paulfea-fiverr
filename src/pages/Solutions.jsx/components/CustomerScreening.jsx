@@ -1,8 +1,8 @@
-import a1 from '../../../images/1a.png';
-import b1 from '../../../images/1b.png';
-import c1 from '../../../images/1c.png';
+import a1 from "../../../images/1a.png";
+import b1 from "../../../images/1b.png";
+import c1 from "../../../images/1c.png";
 
-import a2 from '../../../images/2a.png';
+import a2 from "../../../images/2a.png";
 
 const CustomerScreening = () => {
   return (
@@ -31,7 +31,13 @@ const CustomerScreening = () => {
           {/* 1 */}
           <div>
             <div>
-              <img className="w-16" src={a1} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={a1}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Sanction & PEP screening</h3>
             </div>
 
@@ -45,7 +51,13 @@ const CustomerScreening = () => {
           {/* 2 */}
           <div>
             <div>
-              <img className="w-16" src={b1} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={b1}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Adverse media checks</h3>
             </div>
 
@@ -59,7 +71,13 @@ const CustomerScreening = () => {
           {/* 3 */}
           <div className="max-w-full">
             <div>
-              <img className="w-16" src={c1} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={c1}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Watchlist screening</h3>
             </div>
 
@@ -74,7 +92,13 @@ const CustomerScreening = () => {
           {/* 4 */}
           <div className="max-w-full">
             <div>
-              <img className="w-16" src={a2} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={a2}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Continuous monitoring</h3>
             </div>
 

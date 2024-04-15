@@ -126,19 +126,19 @@ const Footer = () => {
 
           <div className="flex flex-col items-center">
             <Link
-              to={`#`}
+              to={`/privacy`}
               className="hover:text-secondary transition-all duration-150"
             >
               Privacy
             </Link>
             <Link
-              to={`#`}
+              to={`/cookie-policy`}
               className="hover:text-secondary transition-all duration-150"
             >
               Cookie
             </Link>
             <Link
-              to={`#`}
+              to={`/terms`}
               className="hover:text-secondary transition-all duration-150"
             >
               Terms

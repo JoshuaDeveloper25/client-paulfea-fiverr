@@ -21,6 +21,8 @@ const Blog = () => {
     <section className="container-page px-3 my-8">
       <div className="mx-auto max-w-2xl mb-8">
         <img
+          loading="lazy"
+          decoding="async"
           src={data?.data?.image[0]?.cloudinary_url}
           className="w-full rounded-md shadow-lg"
           alt="Blog Image"
@@ -37,7 +39,9 @@ const Blog = () => {
             <AiOutlineBars />
             <p className="text-sm text-gray-700">
               Category:{" "}
-              <span className="font-bold capitalize">{data?.data?.category}</span>
+              <span className="font-bold capitalize">
+                {data?.data?.category}
+              </span>
             </p>
           </div>
 

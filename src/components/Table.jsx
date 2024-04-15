@@ -63,7 +63,7 @@ export const Table = ({ columns = [], data = [] }) => {
                         )}
 
                     <span className="group-hover:opacity-100 opacity-0 transition-opacity">
-                      {/* <img src={sort} alt="asc-desc" /> */}
+                      {/* <img loading="lazy" decoding="async" src={sort} alt="asc-desc" /> */}
                     </span>
                   </div>
                 </th>

@@ -28,7 +28,13 @@ const RootAdmin = () => {
           </Link>
 
           <Link to={`/admin/`}>
-            <img className="w-32 mb-3" src={logo} alt={`Logo`} />
+            <img
+              loading="lazy"
+              decoding="async"
+              className="w-32 mb-3"
+              src={logo}
+              alt={`Logo`}
+            />
           </Link>
 
           {links?.map((adminRoute, id) => {

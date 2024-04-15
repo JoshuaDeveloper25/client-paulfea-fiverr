@@ -170,6 +170,8 @@ const ManageNews = () => {
                 {infoRow?.image?.map((data, id) => (
                   <div key={id} className="relative max-w-[14rem] mx-auto mb-4">
                     <img
+                      loading="lazy"
+                      decoding="async"
                       className="w-full rounded-lg mx-auto"
                       src={data.cloudinary_url}
                     />
@@ -201,10 +203,7 @@ const ManageNews = () => {
                 <option value={""}>Select Category:</option>
                 {optionsCategories?.map((optionCategory, id) => {
                   return (
-                    <option
-                      value={optionCategory.value}
-                      key={id}
-                    >
+                    <option value={optionCategory.value} key={id}>
                       {optionCategory.text}
                     </option>
                   );

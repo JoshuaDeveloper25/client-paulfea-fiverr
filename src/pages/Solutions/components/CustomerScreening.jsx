@@ -35,7 +35,13 @@ const CustomerScreening = () => {
         <article className="grid md:grid-cols-2 gap-10">
           <div>
             <div>
-              <img className="w-16" src={a1} alt={`Icon`} />
+              <img
+                className="w-16"
+                loading="lazy"
+                decoding="async"
+                src={a1}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Sanction & PEP screening</h3>
             </div>
 
@@ -49,7 +55,13 @@ const CustomerScreening = () => {
           {/* 2 */}
           <div>
             <div>
-              <img className="w-16" src={b1} alt={`Icon`} />
+              <img
+                className="w-16"
+                loading="lazy"
+                decoding="async"
+                src={b1}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Adverse media checks</h3>
             </div>
 
@@ -63,7 +75,13 @@ const CustomerScreening = () => {
           {/* 3 */}
           <div className="max-w-full">
             <div>
-              <img className="w-16" src={c1} alt={`Icon`} />
+              <img
+                className="w-16"
+                loading="lazy"
+                decoding="async"
+                src={c1}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Watchlist screening</h3>
             </div>
 
@@ -78,7 +96,13 @@ const CustomerScreening = () => {
           {/* 4 */}
           <div className="max-w-full">
             <div>
-              <img className="w-16" src={a2} alt={`Icon`} />
+              <img
+                className="w-16"
+                loading="lazy"
+                decoding="async"
+                src={a2}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Continuous monitoring</h3>
             </div>
 

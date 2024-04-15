@@ -1,8 +1,8 @@
-import c3 from '../../../images/3c.png';
+import c3 from "../../../images/3c.png";
 
-import a4 from '../../../images/4a.png';
-import b4 from '../../../images/4b.png';
-import c4 from '../../../images/4c.png';
+import a4 from "../../../images/4a.png";
+import b4 from "../../../images/4b.png";
+import c4 from "../../../images/4c.png";
 
 const DueDiligenceAndComplance = () => {
   return (
@@ -20,7 +20,13 @@ const DueDiligenceAndComplance = () => {
         <article className="grid md:grid-cols-2 gap-10">
           <div>
             <div>
-              <img className="w-16" src={c3} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={c3}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Know Your Customer</h3>
             </div>
 
@@ -34,7 +40,13 @@ const DueDiligenceAndComplance = () => {
           {/* 2 */}
           <div>
             <div>
-              <img className="w-16" src={a4} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={a4}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Anti Money Laundering</h3>
             </div>
 
@@ -48,7 +60,13 @@ const DueDiligenceAndComplance = () => {
           {/* 3 */}
           <div className="max-w-auto">
             <div>
-              <img className="w-16" src={b4} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={b4}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Customer Due Diligence</h3>
             </div>
 
@@ -62,7 +80,13 @@ const DueDiligenceAndComplance = () => {
           {/* 4 */}
           <div className="max-w-auto">
             <div>
-              <img className="w-16" src={c4} alt={`Icon`} />
+              <img
+                loading="lazy"
+                decoding="async"
+                className="w-16"
+                src={c4}
+                alt={`Icon`}
+              />
               <h3 className="my-2 font-bold">Risk Score</h3>
             </div>
 

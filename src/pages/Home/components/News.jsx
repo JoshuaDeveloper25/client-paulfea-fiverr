@@ -38,6 +38,8 @@ const News = () => {
                 key={info._id}
               >
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src={info?.image[0]?.cloudinary_url}
                   className="rounded-sm object-contain h-44 w-full"
                 />

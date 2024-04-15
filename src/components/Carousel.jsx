@@ -62,37 +62,67 @@ const Carousel = ({
   return (
     <Slider {...settings}>
       <div className="text-center">
-        <img src={feature1} className="w-24 rounded-full mx-auto mb-1" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src={feature1}
+          className="w-24 rounded-full mx-auto mb-1"
+        />
         <h3 className="text-gray-600 my-2 font-bold text-lg">{titleOne}</h3>
         <p className="text-[.8rem] text-gray-500">{paragraphOne}</p>
       </div>
 
       <div className="text-center">
-        <img src={feature2} className="w-24 rounded-full mx-auto mb-1" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src={feature2}
+          className="w-24 rounded-full mx-auto mb-1"
+        />
         <h3 className="text-gray-600 my-2 font-bold text-lg">{titleTwo}</h3>
         <p className="text-[.8rem] text-gray-500">{paragraphTwo}</p>
       </div>
 
       <div className="text-center">
-        <img src={feature3} className="w-24 rounded-full mx-auto mb-1" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src={feature3}
+          className="w-24 rounded-full mx-auto mb-1"
+        />
         <h3 className="text-gray-600 my-2 font-bold text-lg">{titleThree}</h3>
         <p className="text-[.8rem] text-gray-500">{paragraphThree}</p>
       </div>
 
       <div className="text-center">
-        <img src={feature4} className="w-24 rounded-full mx-auto mb-1" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src={feature4}
+          className="w-24 rounded-full mx-auto mb-1"
+        />
         <h3 className="text-gray-600 my-2 font-bold text-lg">{titleFour}</h3>
         <p className="text-[.8rem] text-gray-500">{paragraphFour}</p>
       </div>
 
       <div className="text-center">
-        <img src={feature5} className="w-24 rounded-full mx-auto mb-1" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src={feature5}
+          className="w-24 rounded-full mx-auto mb-1"
+        />
         <h3 className="text-gray-600 my-2 font-bold text-lg">{titleFive}</h3>
         <p className="text-[.8rem] text-gray-500">{paragraphFive}</p>
       </div>
 
       <div className="text-center">
-        <img src={feature6} className="w-24 rounded-full mx-auto mb-1" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src={feature6}
+          className="w-24 rounded-full mx-auto mb-1"
+        />
         <h3 className="text-gray-600 my-2 font-bold text-lg">{titleSix}</h3>
         <p className="text-[.8rem] text-gray-500">{paragraphSix}</p>
       </div>

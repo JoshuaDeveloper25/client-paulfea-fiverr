@@ -84,7 +84,7 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
 
       <div className="grid md:grid-cols-3 min-[450px]:grid-cols-2 row-gap-3 gap-7">
         {data?.docs?.map((info) => {
-          console.log(info)
+          console.log(info);
           return (
             <div
               onClick={() => navigate(`/blog/${info._id}`)}
@@ -92,6 +92,8 @@ const NewsCards = ({ query, isFetching, handleQuery, data }) => {
               className="shadow-lg rounded-sm cursor-pointer"
             >
               <img
+                loading="lazy"
+                decoding="async"
                 src={info?.image[0]?.cloudinary_url}
                 className="rounded-sm object-contain h-44 w-full"
               />
