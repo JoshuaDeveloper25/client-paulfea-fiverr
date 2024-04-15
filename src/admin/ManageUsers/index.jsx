@@ -87,7 +87,7 @@ const ManageUsers = () => {
   }
 
   return (
-    <div className="container-page px-3 my-5">
+    <div className="container-page md:px-3 px-0 my-5">
       {/* --> Header */}
       <Header />
 

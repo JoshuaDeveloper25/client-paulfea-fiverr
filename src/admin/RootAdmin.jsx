@@ -27,11 +27,11 @@ const RootAdmin = () => {
     <div className="flex min-h-svh">
       {/* MOBILE */}
       {/* <!-- drawer init and toggle --> */}
-      <div className="md:hidden flex">
+      {/* <div className="md:hidden flex">
         <div className="text-center">
           <button
             onClick={() => setNavOpenResponsive(true)}
-            className="text-3xl"
+            className="text-4xl fixed top-2 left-2"
             type="button"
             data-drawer-show={`drawer-example`}
           >
@@ -40,7 +40,7 @@ const RootAdmin = () => {
         </div>
       </div>
 
-      {/* <!-- drawer component --> */}
+      {/* <!-- drawer component --> 
       <div
         id="drawer-example"
         className={`md:hidden fixed top-0 max-w-full left-0 z-40 h-screen p-4 overflow-y-auto transition-transform duration-500 bg-[#000000ef] w-80  ${
@@ -98,7 +98,7 @@ const RootAdmin = () => {
               >
                 {adminRoute?.text}
               </Link>
-            ))}{" "}
+            ))}
           </div>
 
           <Link
@@ -108,19 +108,19 @@ const RootAdmin = () => {
             Sign Out
           </Link>
         </div>
-      </div>
+      </div> 
+      */}
 
       {/* DESKTOP */}
       {/* --> This is the navbar */}
       {!navOpen && (
-        <nav className="relative hidden md:flex flex-col justify-between row-gap-4 bg-[#000000bd] p-5 me-5">
-          
-          <IoIosArrowBack
+        <nav className="relative flex-col justify-between row-gap-4 bg-[#000000bd] min-w-[15rem] p-5">
+          {/* <IoIosArrowBack
             onClick={() => setNavOpen((prev) => !prev)}
-            className={`md:flex hidden text-2xl absolute cursor-pointer left-[10.5rem] top-[43%] transition-transform duration-300 ${
+            className={` text-2xl absolute cursor-pointer left-[10.5rem] top-[43%] transition-transform duration-300 ${
               !navOpen ? "translate-x-0" : "-translate-x-full"
             }`}
-          />
+          /> */}
 
           <div className="flex flex-col gap-2">
             <Link to={`/`}>
@@ -148,7 +148,7 @@ const RootAdmin = () => {
             ))}
           </div>
 
-          <div>
+          <div className="mt-auto">
             {" "}
             <Link
               to="#"
@@ -161,12 +161,12 @@ const RootAdmin = () => {
         </nav>
       )}
 
-      {navOpen && (
+      {/* {navOpen && (
         <IoIosArrowForward
           onClick={() => setNavOpen((prev) => !prev)}
           className={`md:flex hidden text-2xl absolute cursor-pointer left-[0] top-[43%]`}
         />
-      )}
+      )} */}
 
       {/* --> This is the admin panel */}
       <main className="ms-8">
