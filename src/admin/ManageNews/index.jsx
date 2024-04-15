@@ -55,10 +55,10 @@ const ManageNews = () => {
       accessorKey: "category",
     },
 
-    {
-      header: "Upload Image",
-      accessorKey: "uploadImages",
-    },
+    // {
+    //   header: "Upload Image",
+    //   accessorKey: "uploadImages",
+    // },
 
     {
       header: "Actions",

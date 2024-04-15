@@ -29,3 +29,7 @@
 .slick-next {
   right: 0;
 }
+
+.active-link {
+  color: rgb(5, 127, 5);
+}

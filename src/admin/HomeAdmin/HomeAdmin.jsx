@@ -1,19 +1,21 @@
 import { links } from "../../utils/adminRoutes";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HomeAdmin = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="container-page px-3">
-      <div className="flex flex-wrap items-center gap-10 row-gap-3 mt-10">
+      <div className="flex flex-wrap justify-between gap-5 mt-10">
         {links?.map((link, id) => {
           return (
-            <Link
-              to={link?.to}
-              className={`border-secondary border animation-fade hover:border-transparent hover:bg-secondary hover:text-white text-4xl font-bold text-center flex items-center justify-center text-black max-w-72 h-52 rounded px-5`}
+            <div
               key={id}
+              onClick={() => navigate(`${link?.to}`)}
+              className={`flex items-center justify-center w-full min-h-[15rem] md:min-w-[30rem] min-w-auto  cursor-pointer border-secondary border animation-fade hover:border-transparent hover:bg-secondary hover:text-white text-4xl font-bold text-center  text-black  rounded px-5`}
             >
               {link?.text}
-            </Link>
+            </div>
           );
         })}
       </div>

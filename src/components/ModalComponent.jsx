@@ -22,7 +22,7 @@ const ModalComponent = ({
   return (
     <>
       {/* <!-- Modal button --> */}
-      <div className="flex gap-5">
+      <div className="flex gap-5 justify-end">
         <button
           data-modal-target="default-modal"
           data-modal-toggle="default-modal"

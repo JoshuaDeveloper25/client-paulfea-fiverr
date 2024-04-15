@@ -50,8 +50,8 @@ const Header = ({
       <ModalComponent
         setShowModal={setShowModal}
         showModal={showModal}
-        textBtn={"Create New"}
-        titleModal={"Create New"}
+        textBtn={"Create News"}
+        titleModal={"Create News"}
         // SecondaryBtn={() => <ImportUsers setRefreshRender={setRefreshRender} />}
         onClose={() => setTextInfo([])}
       >

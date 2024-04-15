@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate, Navigate } from "react-router-dom";
+import { Link, Outlet, useNavigate, Navigate, NavLink } from "react-router-dom";
 import { UserContext } from "../context/UserProvider";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
@@ -7,12 +7,15 @@ import { links } from "../utils/adminRoutes";
 import { FaArrowLeft } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import logo from "../images/logo.png";
+import { Menu, MenuItem, Sidebar } from "react-pro-sidebar";
 
 const RootAdmin = () => {
   const { state, dispatch } = useContext(UserContext);
   const [navOpen, setNavOpen] = useState(false);
   const [navOpenResponsive, setNavOpenResponsive] = useState(false);
   const navigate = useNavigate();
+
+  const [toggled, setToggled] = useState(false);
 
   const signOut = () => {
     dispatch({ type: "LOG_OUT" });
@@ -112,7 +115,7 @@ const RootAdmin = () => {
       */}
 
       {/* DESKTOP */}
-      {/* --> This is the navbar */}
+      {/* --> This is the navbar
       {!navOpen && (
         <nav className="relative flex-col justify-between row-gap-4 bg-[#000000bd] min-w-[15rem] p-5">
           {/* <IoIosArrowBack
@@ -120,7 +123,7 @@ const RootAdmin = () => {
             className={` text-2xl absolute cursor-pointer left-[10.5rem] top-[43%] transition-transform duration-300 ${
               !navOpen ? "translate-x-0" : "-translate-x-full"
             }`}
-          /> */}
+          /> 
 
           <div className="flex flex-col gap-2">
             <Link to={`/`}>
@@ -149,7 +152,6 @@ const RootAdmin = () => {
           </div>
 
           <div className="mt-auto">
-            {" "}
             <Link
               to="#"
               className="block px-4 text-center py-2 text-white bg-secondary hover:bg-secondary/60 cursor-pointer rounded-md"
@@ -159,7 +161,79 @@ const RootAdmin = () => {
             </Link>
           </div>
         </nav>
-      )}
+      )} */}
+
+      <div style={{ display: "flex", height: "100%", minHeight: "100vh" }}>
+        <Sidebar
+          breakPoint="md"
+          backgroundColor="black"
+          onBackdropClick={() => setToggled(false)}
+          toggled={toggled}
+        >
+          <Menu className="text-white">
+            <div className="flex flex-col h-svh">
+              <NavLink className="block mx-3 mt-4" to={`/admin/`}>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-32 mb-3"
+                  src={logo}
+                  alt={`Logo`}
+                />
+              </NavLink>
+
+              <NavLink
+                to={`/`}
+                className="hover:text-secondary border-b border-gray-500 block mx-3 pb-2"
+              >
+                Go Home
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-secondary px-3 py-3"
+                    : "px-3 py-3 hover:text-secondary"
+                }
+                to={`/admin/manage-users`}
+              >
+                Manager Users
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-secondary px-3 py-3"
+                    : "px-3 py-3 hover:text-secondary"
+                }
+                to={`/admin/manage-news`}
+              >
+                Manage News
+              </NavLink>
+
+              <Link
+                className="text-center mt-auto px-3 font-bold py-3 bg-red-500 hover:bg-red-400 animation-fade hover:text-white"
+                onClick={signOut}
+              >
+                Sign Out
+              </Link>
+            </div>
+          </Menu>
+        </Sidebar>
+
+        <main style={{ display: "flex", padding: 10 }}>
+          <div>
+            <button
+              className="sb-button text-4xl md:hidden"
+              onClick={() => setToggled(!toggled)}
+              type="button"
+              data-drawer-show={`drawer-example`}
+            >
+              <IoMenu />
+            </button>
+          </div>
+        </main>
+      </div>
 
       {/* {navOpen && (
         <IoIosArrowForward
@@ -169,7 +243,7 @@ const RootAdmin = () => {
       )} */}
 
       {/* --> This is the admin panel */}
-      <main className="ms-8">
+      <main className="">
         <Outlet />
       </main>
     </div>
