@@ -4,9 +4,9 @@ const AboutUsInformationOne = () => {
   return (
     <section className="container-page px-3">
       <div className="text-center lg:my-16 my-4">
-        <h2 className="px-5 inline-block text-4xl border-b border-secondary">
+        <h2 className="px-5 font-bold inline-block text-4xl border-b border-secondary">
           Who are{" "}
-          <span className="font-bold text-secondary animate-pulse">We?</span>
+          <span className=" text-secondary animate-pulse">We?</span>
         </h2>
       </div>
 

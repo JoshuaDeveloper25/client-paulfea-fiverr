@@ -5,7 +5,7 @@ const GetInTouch = () => {
   return (
     <section className="container-page px-3 md:my-16 my-8">
       <div className="text-center mt-6 md:mb-16 mb-8">
-        <h2 className="px-5 inline-block text-4xl border-b border-secondary">
+        <h2 className="px-5 inline-block text-4xl font-bold border-b border-secondary">
           Contact Us
         </h2>
       </div>

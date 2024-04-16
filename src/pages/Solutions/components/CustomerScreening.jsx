@@ -8,7 +8,7 @@ const CustomerScreening = () => {
   return (
     <>
       <div className="text-center my-14">
-        <h2 className="px-5 inline-block text-4xl border-b border-secondary mb-4">
+        <h2 className="px-5 inline-block font-bold text-4xl border-b border-secondary mb-4">
           Solutions
         </h2>
 
