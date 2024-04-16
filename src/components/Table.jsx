@@ -128,7 +128,7 @@ export const Table = ({ columns = [], data = [] }) => {
                 className="inline-block rounded border w-12 py-1 text-center border-b-gray-300"
               />
 
-              <span>de {table.getPageCount()}</span>
+              <span>of {table.getPageCount()}</span>
             </form>
           </footer>
         </>
