@@ -118,7 +118,7 @@ export const Table = ({ columns = [], data = [] }) => {
                 table.setPageIndex(e.target.page.value);
               }}
             >
-              <span>Página</span>
+              <span>Page</span>
 
               <input
                 type="number"

@@ -19,9 +19,9 @@ const PricingCards = () => {
   return (
     <section id="pricing" className="container-page px-3">
       <div className="text-center my-16">
-        <h2 className=" px-5 inline-block text-4xl border-b border-secondary">
+        <h2 className=" px-5 inline-block font-bold text-4xl border-b border-secondary">
           Pric
-          <span className="font-bold text-secondary">ing</span>
+          <span>ing</span>
         </h2>
         <p className="text-gray-600 mt-4 max-w-md mx-auto">
           Flexible identity verification pricing and KYC services designed to

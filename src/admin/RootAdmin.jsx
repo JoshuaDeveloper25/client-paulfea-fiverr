@@ -163,7 +163,7 @@ const RootAdmin = () => {
         </nav>
       )} */}
 
-      <div style={{ display: "flex", height: "100%", minHeight: "100vh" }}>
+      <div className="sticky inset-0" style={{ display: "flex", height: "100%", minHeight: "100vh" }}>
         <Sidebar
           breakPoint="md"
           backgroundColor="black"
