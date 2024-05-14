@@ -1,24 +1,27 @@
-import b2 from "../../../images/2b.png";
-import c2 from "../../../images/2c.png";
+import b2 from '../../../images/2b.png';
+import c2 from '../../../images/2c.png';
 
-import a3 from "../../../images/3a.png";
-import b3 from "../../../images/3b.png";
+import a3 from '../../../images/3a.png';
+import b3 from '../../../images/3b.png';
 
 const IdentityAssurance = () => {
   return (
-    <section id='IdentityAssurance' className="container-page px-3 md:my-24 my-10 flex flex-col gap-8 lg:flex-row">
-      <article className="flex flex-col lg:flex-row gap-8">
+    <section
+      id="IdentityAssurance"
+      className="container-page px-3 md:my-24 my-10 flex flex-col gap-8 lg:flex-row"
+    >
+      <article className="lg:max-w-xs flex-1 flex flex-col lg:flex-row gap-8">
         <div>
           <h3 className="text-lg font-bold">{`Identity Assurance`}</h3>
           <p>
-            Our robust identity verification suite empowers you to establish the
-            appropriate Level of Assurance (LoA) quickly and reliably for your
-            specific use case.
+            Hobzz’s identity verification service empowers customers to
+            establish their appropriate Level of Assurance (LOA) according to
+            their needs.
           </p>
         </div>
       </article>
 
-      <article className="grid md:grid-cols-2 gap-10">
+      <article className="flex-1 grid md:grid-cols-2 gap-10">
         <div className="max-w-full">
           <div>
             <img
@@ -32,9 +35,11 @@ const IdentityAssurance = () => {
           </div>
 
           <div>
-            Enhance user experience with our top-tier document verification
-            service, offering a streamlined and rapid verification process
-            guided by clear instructions.
+            <p>
+              Our document verification service enhances user experience by
+              offering a rapid and streamlined verification process guided by
+              clear instructions.
+            </p>
           </div>
         </div>
 
@@ -52,9 +57,13 @@ const IdentityAssurance = () => {
           </div>
 
           <div>
-            Strengthen product security and limit user access seamlessly,
-            without introducing unnecessary friction to your customers’
-            experience/
+            <p>
+              Hobzz’s multi-point biometric matching technology service uses
+              proprietary face maps to accurately authenticate customers faces,
+              allowing users to securely verify their customers’ identity prior
+              to offering any service without imposing any unnecessary burdens
+              on the customer.
+            </p>
           </div>
         </div>
 
@@ -71,9 +80,13 @@ const IdentityAssurance = () => {
           </div>
 
           <div>
-            Leverage our intelligent capture solutions to extract pertinent
-            details from Proof of Address (PoA) documents and validate them
-            against client and location data effortlessly.
+            <p>
+              Hobzz’s multi-point biometric matching technology service uses
+              proprietary face maps to accurately authenticate customers faces,
+              allowing users to securely verify their customers’ identity prior
+              to offering any service without imposing any unnecessary burdens
+              on the customer.
+            </p>
           </div>
         </div>
 
@@ -91,9 +104,12 @@ const IdentityAssurance = () => {
           </div>
 
           <div>
-            Employ our advanced biometric checks to ensure the identity document
-            presenter matches the individual being verified, bolstering security
-            measures effectively.
+            <p>
+              Hobzz also utilises advanced biometric checks to ensure that the
+              individuals submitting the identity documents is the same
+              individual, protecting users from imposters using advanced
+              presentation attaches such as 3D masks.
+            </p>
           </div>
         </div>
       </article>

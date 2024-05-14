@@ -10,7 +10,7 @@ const News = () => {
   const navigate = useNavigate();
 
   // --> Load or fetch the latest news...
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ["news"],
     queryFn: async () =>
       await axios?.get(`/news/get-latest-news`).then((res) => res.data),
@@ -18,6 +18,7 @@ const News = () => {
 
   if (isLoading) return <p>Loading...</p>;
 
+  console.log(data)
   return (
     <section className="container-page px-3 md:my-16 my-6">
       <h3 className="text-center text-4xl">

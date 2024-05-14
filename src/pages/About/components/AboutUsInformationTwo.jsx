@@ -1,4 +1,4 @@
-import about2 from "../../../images/about2.png";
+import about2 from '../../../images/about2.png';
 
 const AboutUsInformationTwo = () => {
   return (
@@ -16,19 +16,18 @@ const AboutUsInformationTwo = () => {
 
         <div className="flex-1">
           <p className="text-gray-700">
-            While internet businesses are outpacing traditional sectors in
-            growth, global online commerce still represents a mere fraction of
-            overall economic activity, accounting for approximately 3 percent in
-            2018, as reported by the International Monetary Fund.
+            Our platform boasts industry-leading uptime and performance, whilst
+            also complying to the highest of standards. The platform is also
+            continuously being updated to stay ahead of the ever-increasing
+            demand of AML obligations.
           </p>
 
           <p className="text-gray-700 my-3">
-            The barriers to further expansion are well-documented: regulatory
-            intricacies, trust deficits, and outdated financial infrastructures
-            hinder the full potential of the digital economy.
+            Our goal is to facilitate regulatory compliance for all types of
+            business, allowing them to grow and increase economic output.
           </p>
 
-          <p className="text-gray-700">
+          {/* <p className="text-gray-700">
             At Hobzz, we recognize the imperative of overcoming these obstacles.
             That's why we partner with ComplyCube, a dedicated platform
             streamlining regulatory compliance and fostering trust among
@@ -36,7 +35,7 @@ const AboutUsInformationTwo = () => {
             trust-building measures, ComplyCube accelerates growth trajectories
             and boosts economic productivity for both new ventures and
             established enterprises alike.
-          </p>
+          </p> */}
         </div>
       </article>
     </section>

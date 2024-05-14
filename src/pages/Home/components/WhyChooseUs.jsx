@@ -1,6 +1,6 @@
-import whyChooseUs from "../../../images/whychooseus.jpg";
-import { FaCheck } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import whyChooseUs from '../../../images/whychooseus.jpg';
+import { FaCheck } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
 
 const WhyChooseUs = () => {
   const navigate = useNavigate();
@@ -10,22 +10,23 @@ const WhyChooseUs = () => {
       <article className="flex md:flex-row flex-col-reverse gap-6 py-5">
         <div className="flex-1">
           <h3 className="text-3xl mb-3">
-            Why choose{" "}
+            Why choose{' '}
             <span className="font-bold text-secondary animate-pulse">
               Hobzz?
             </span>
           </h3>
 
           <p className="text-gray-500 text-sm leading-6">
-            The Hobzz platform provides unparalleled KYC solutions tailored to
-            meet the diverse needs of modern businesses. From startups to
-            multinational enterprises, we offer comprehensive, flexible, and
-            top-rated identity verification services through our ComplyCube
-            integration. Build trust in your business with our multi-layered
-            online identity verification system.
+            The Hobzz platform delivers unmatched due diligence solutions
+            customized to suit the needs of any business. We provide extensive,
+            adaptable, and highly acclaimed identity verification services.
           </p>
 
-          <div className="space-y-3 my-7">
+          <p className="text-gray-500 text-sm leading-6 my-3">
+            Our advanced online identity verification platform offers:
+          </p>
+
+          <div className="space-y-3 mb-7">
             <div className="flex items-center gap-3">
               <div>
                 <FaCheck className="text-secondary" />
@@ -57,7 +58,7 @@ const WhyChooseUs = () => {
 
               <div>
                 <p className="text-sm text-gray-500">
-                  Extensive Data Points for Enhanced Verification
+                  Global Reach with Extensive Coverage
                 </p>
               </div>
             </div>

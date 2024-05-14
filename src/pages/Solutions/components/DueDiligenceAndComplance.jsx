@@ -1,23 +1,23 @@
-import c3 from "../../../images/3c.png";
+import c3 from '../../../images/3c.png';
 
-import a4 from "../../../images/4a.png";
-import b4 from "../../../images/4b.png";
-import c4 from "../../../images/4c.png";
+import a4 from '../../../images/4a.png';
+import b4 from '../../../images/4b.png';
+import c4 from '../../../images/4c.png';
 
 const DueDiligenceAndComplance = () => {
   return (
-    <section id='DueDiligence&Compliance' className="container-page px-3 mb-10">
+    <section id="DueDiligence&Compliance" className="container-page px-3 mb-10">
       <article className="flex flex-col lg:flex-row gap-8">
-        <div>
+        <div className="flex-1 lg:max-w-xs">
           <h3 className="text-lg font-bold">{`Due Diligence & Compliance`}</h3>
           <p>
-            Our cutting-edge global compliance platform empowers you to conduct
-            thorough investigations and establish business relationships
-            worldwide in a matter of seconds.
+            Our cutting-edge global compliance platform empowers users to
+            conduct thorough investigations within a matter of seconds prior to
+            proceeding with business relationships.
           </p>
         </div>
 
-        <article className="grid md:grid-cols-2 gap-10">
+        <article className="flex-1 grid md:grid-cols-2 gap-10">
           <div>
             <div>
               <img
@@ -31,9 +31,12 @@ const DueDiligenceAndComplance = () => {
             </div>
 
             <div>
-              Combat fraudulent activities while maintaining smooth customer
-              journeys through our intelligent and customizable identity
-              verification checks.
+              <p>
+                Hobzz’s intelligent and customizable identity verification
+                checks allow users to screen clients against worldwide data
+                coverage spanning over 220+ territories by utilising advanced
+                document checks to detect spoofing and prevent fraud.
+              </p>
             </div>
           </div>
 
@@ -51,9 +54,12 @@ const DueDiligenceAndComplance = () => {
             </div>
 
             <div>
-              Address regulatory requirements and combat financial crime and
-              terrorist financing with ease through our innovative and
-              seamlessly integrable AML platform.
+              <p>
+                Hobzz’s innovative AML platform allows users to effortlessly
+                adhere to global regulatory AML and CFT requirements through
+                automated policies which are customizable to be in line with
+                users’ risk based approach.
+              </p>
             </div>
           </div>
 
@@ -71,9 +77,12 @@ const DueDiligenceAndComplance = () => {
             </div>
 
             <div>
-              Whether performing standard customer due diligence (CDD) or
-              enhanced due diligence (EDD), rely on our best-in-class onboarding
-              flows to ensure compliance and mitigate risks effectively.
+              <p>
+                Whether performing standard due diligence checks (CDD) or
+                enhanced due diligence checks (EDD), Hobzz offers a variety of
+                KYC checks together with real-time monitoring capabilities to
+                mitigate risks effectively.
+              </p>
             </div>
           </div>
 
@@ -91,9 +100,12 @@ const DueDiligenceAndComplance = () => {
             </div>
 
             <div>
-              Utilize our proprietary risk engine, which employs advanced
-              algorithms to calculate AML risk scores for your customers,
-              providing you with clear low, medium, or high-risk assessments.
+              <p>
+                Hobzz incorporates a risk engine which employs customizable
+                advanced algorithms to calculate AML risk scores for your
+                customers, providing users with low, medium or high-risk
+                assessment scores which are easily explainable and traceable.
+              </p>
             </div>
           </div>
         </article>

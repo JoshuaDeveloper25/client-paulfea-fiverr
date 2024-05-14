@@ -1,33 +1,29 @@
-import about from "../../../images/about.png";
+import about from '../../../images/about.png';
 
 const AboutUsInformationOne = () => {
   return (
     <section className="container-page px-3">
       <div className="text-center lg:my-16 my-4">
         <h2 className="px-5 font-bold inline-block text-4xl border-b border-secondary">
-          Who are{" "}
-          <span className=" text-secondary animate-pulse">We?</span>
+          Who are <span className=" text-secondary animate-pulse">We?</span>
         </h2>
       </div>
 
       <article className="flex md:flex-row flex-col-reverse md:gap-16 gap-6 md:py-5 py-2">
         <div className="flex-1">
           <p className="text-gray-700 mb-3">
-            Hobzz seamlessly integrates with ComplyCube, an all-in-one
-            verification platform revolutionizing regulatory compliance
-            worldwide. ComplyCube is designed to empower businesses like ours to
-            meet global regulatory standards, enhance customer conversion rates,
-            and effectively combat fraudulent activities, all while ensuring a
-            smooth experience for our genuine users.
+            Hobzz offers an all-in-one verification platform revolutionizing
+            regulatory compliance worldwide, empowering businesses to meet
+            international regulatory standards, boost customer conversion rates,
+            and effectively combat fraudulent activities, whilst also ensuring
+            genuine users enjoy a seamless experience.
           </p>
-
-          <p className="text-gray-700">
-            With ComplyCube, Hobzz gains access to a comprehensive suite of Know
-            Your Customer (KYC) tools tailored to our unique business model.
-            Whether we're operating in telecoms, fintech, e-commerce, on-demand
-            services, crowdfunding, or any other industry, ComplyCube equips us
-            with the necessary building blocks for efficient compliance and
-            seamless customer onboarding.
+          <p className="text-gray-700 mb-3">
+            Hobzz provides a diverse range of Know Your Customer (KYC) tools for
+            any type of business model. Whether operating in fintech,
+            e-commerce, on-demand services, crowdfunding, or any other industry,
+            Hobzz provides the essential tools for streamlined compliance and
+            effortless customer onboarding.
           </p>
         </div>
 

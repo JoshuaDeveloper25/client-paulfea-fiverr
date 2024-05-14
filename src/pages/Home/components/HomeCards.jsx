@@ -1,7 +1,7 @@
-import cardImageOne from "../../../images/container1.png";
-import cardImageTwo from "../../../images/container2.png";
-import cardImageThree from "../../../images/container3.png";
-import { useNavigate } from "react-router-dom";
+import cardImageOne from '../../../images/container1.png';
+import cardImageTwo from '../../../images/container2.png';
+import cardImageThree from '../../../images/container3.png';
+import { useNavigate } from 'react-router-dom';
 
 const HomeCards = () => {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const HomeCards = () => {
             </h3>
             <div className="h-1 w-12 bg-secondary my-3 mb-4 mx-auto"></div>
             <p className="text-gray-500 text-sm my-2">
-              Perform global KYC checks quickly and cost-effectively
+              Conduct swift and efficient due diligence screenings.
             </p>
             <button
               type="button"
@@ -63,7 +63,7 @@ const HomeCards = () => {
             </h3>
             <div className="h-1 w-12 bg-secondary my-3 mb-4 mx-auto"></div>
             <p className="text-gray-500 text-sm my-2">
-              Verify your customers true identity in under 30 seconds
+              Customer identity verification in under 30 seconds.
             </p>
             <button
               type="button"
@@ -87,11 +87,11 @@ const HomeCards = () => {
           </div>
           <div className="text-center px-4">
             <h3 className="my-2  font-bold text-md uppercase text-gray-700 mt-3">
-              Anti-Money Laundering
+              Anti-Money Laundering and Preventing Funding of Terrorism
             </h3>
             <div className="h-1 w-12 bg-secondary my-3 mb-4 mx-auto"></div>
             <p className="text-gray-500 text-sm my-2">
-              Prevent money laundering, terrorist financing, and fraud
+              Prevent money laundering and the funding of terrorism.
             </p>
             <button
               type="button"

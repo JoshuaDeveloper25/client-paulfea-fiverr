@@ -21,18 +21,18 @@ const CustomerScreening = () => {
         id="CustomerScreening"
         className="container-page px-3 flex flex-col gap-8 lg:flex-row"
       >
-        <article className="flex flex-col lg:flex-row gap-8">
+        <article className="flex-1 lg:max-w-xs flex flex-col lg:flex-row gap-8">
           <div>
             <h3 className="text-lg font-bold">{`Customer Screening`}</h3>
             <p>
-              Our customer screening solution offers unparalleled global
-              coverage, intelligent technology, and an extensive array of data
-              sources, providing you with the utmost peace of mind.
+              Hobzz’s customer screening solution offers unmatched global
+              coverage, smart technology and a vast collection of data sources,
+              ensuring that our customers are confident in their KYC checks.
             </p>
           </div>
         </article>
 
-        <article className="grid md:grid-cols-2 gap-10">
+        <article className="flex-1 grid md:grid-cols-2 gap-10">
           <div>
             <div>
               <img
@@ -46,9 +46,12 @@ const CustomerScreening = () => {
             </div>
 
             <div>
-              Benefit from our screening capability, which delivers extensive
-              coverage of sanctioned individuals, Politically Exposed Persons
-              (PEPs), and companies.
+              <p>
+                Our unmatched global coverage together with our vast collection
+                of data sources allows our platform to deliver extensive
+                coverage of sanctioned individuals and companies, as well as
+                Politically Exposed Persons (PEPs).
+              </p>
             </div>
           </div>
 
@@ -66,9 +69,12 @@ const CustomerScreening = () => {
             </div>
 
             <div>
-              Safeguard your reputation by leveraging our AI-powered adverse
-              media service to screen customers before onboarding them, ensuring
-              comprehensive risk mitigation.
+              <p>
+                Our platform also utilises Artificial Intelligence to perform
+                adverse media checks on individuals, companies and PEPs,
+                allowing such media to be detected by our users prior to
+                onboarding clients.
+              </p>
             </div>
           </div>
 
@@ -86,10 +92,11 @@ const CustomerScreening = () => {
             </div>
 
             <div>
-              Utilize Hobzz’s comprehensive coverage of global AML watchlist
-              sources and flexible automation features, seamlessly integrated
-              with Complycube, to ensure compliance with the most stringent
-              regulations.
+              <p>
+                Hobzz also offers extensive global coverage of AML watchlist
+                sources, allowing users to ensure compliance with the most
+                stringent regulations.
+              </p>
             </div>
           </div>
 
@@ -107,9 +114,12 @@ const CustomerScreening = () => {
             </div>
 
             <div>
-              Stay ahead of your Ongoing Due Diligence (ODD) requirements with
-              our continuous monitoring service, receiving real-time
-              notifications of any changes in your customers’ status.
+              <p>
+                Our continuous monitoring service allows users to stay ahead of
+                their Ongoing Due Diligence (ODD) obligations by providing
+                real-time notifications to users of any changes in their
+                customers’ status.
+              </p>
             </div>
           </div>
         </article>

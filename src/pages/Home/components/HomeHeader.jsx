@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import homeHeader from "../../../images/home-bg.jpg";
+import { useNavigate } from 'react-router-dom';
+import homeHeader from '../../../images/home-bg.jpg';
 
 const HomeHeader = () => {
   const navigate = useNavigate();
@@ -14,13 +14,13 @@ const HomeHeader = () => {
       <div className="container-page text-center px-3 py-3">
         <div className="flex flex-col items-center justify-center h-[75vh]">
           <h2 className="text-4xl text-white font-bold">
-            Identity verification service
+            Identification Verification Platform
           </h2>
           <p className="max-w-2xl mx-auto text-gray-100 my-3">
-            Onboard more customers with leading Identity Verification & KYC
-            solutions. Hobzz's integration with Complycube's AI platform
-            verifies customers’ identities in seconds through ID documents,
-            selfies, and trusted data sources.
+            Onboard more customers by using the most complete and flexible
+            online Identity Verification & KYC Solutions. Our platform swiftly
+            authenticates customers’ identities within seconds using ID
+            documents, selfies and other reliable data sources.
           </p>
 
           <div className="flex justify-center items-center gap-4">
@@ -30,7 +30,7 @@ const HomeHeader = () => {
                 type="button"
                 onClick={() => navigate(`/pricing`)}
               >
-                Start Now
+                Begin
               </button>
             </div>
 
